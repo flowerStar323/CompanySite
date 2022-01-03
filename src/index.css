@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Robot;
+    src: url('./assets/Fonts/Roboto/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: Noah;
+    src: url('./assets/Fonts/Noah/NoahGrotesqueRegular.otf');
+}
+@font-face {
+    font-family: NoahLight;
+    src: url('./assets/Fonts/Noah/NoahGrotesqueLight.otf');
+}
+@font-face {
+    font-family: NoahBold;
+    src: url('./assets/Fonts/Noah/NoahGrotesqueBold.otf');
+}

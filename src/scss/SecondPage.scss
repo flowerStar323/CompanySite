@@ -1,0 +1,501 @@
+.secroot {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url("../assets/secBack.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+body {
+    overflow-x: hidden;
+}
+.sideBar {
+    min-width: 320px;
+    max-width: 320px;
+    background-color: rgba($color: #0f183d, $alpha: 0.8);
+    padding: 0 10px;
+    height: 100vh;
+    position: fixed;
+    transition: .2s all;
+}
+.logo {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.sideItem {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 13px 0;
+    img {
+        margin-right: 20px;
+    }
+}
+.sidebody {
+    margin-top: 40px;
+    padding-left: 15px;
+}
+.discount {
+    color: #737492;
+    font-size: 17px;
+    font-family: Robot;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: red !important; 
+    border-color: transparent;
+    color: transparent;
+  }
+.bondnavitem {
+    margin-left: 57px;
+}
+.mim {
+    color: #e0e1fb;
+    font-family: Robot;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 10px 0 30px 0;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footereter {
+    color: #98979c;
+    font-family: Robot;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 15px 0;
+}
+.socialItem img {
+    cursor: pointer;
+}
+.socialItem {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.footerout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.secRight {
+    width: 100%;
+    padding: 10px;
+}
+.secwalletBtnOut {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.secwalletBtn {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #62b8fa;
+    width: 250px;
+    height: 45px;
+    background-color: #5b92e2;
+    font-family: Noah;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.singlestakeOut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.singlestake-calcu {
+    margin-top: 15px;
+}
+.singlestake {
+    margin-top: 40px;
+}
+.calcu-middle {
+    margin-top: 40px;
+}
+.singlestake,
+.singlestake-calcu {
+    width: 850px;
+    background-color: rgba($color: #0f183d, $alpha: 0.9);
+    padding: 20px 30px;
+}
+.singletop {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid #4f5773;
+    border-bottom: 1px solid #4f5773;
+}
+.singleTop-left {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Noah;
+}
+.singleTop-right {
+    color: #4f5773;
+    font-family: Robot;
+    font-size: 17px;
+}
+button {
+    background-color: transparent;
+    width: 250px;
+    height: 55px;
+    border: none;
+    color: white !important;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover .ButtonText {
+    animation: bling 1.3s infinite;
+}
+button:hover span:nth-child(3) {
+    height: 100%;
+}
+button:hover span:nth-child(4) {
+    height: 100%;
+}
+button:hover span:nth-child(1) {
+    width: 99%;
+}
+button:hover span:nth-child(2) {
+    width: 99%;
+}
+span {
+    position: absolute;
+}
+span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    border: 1px solid dodgerblue;
+    width: 90%;
+    transition: all 0.5s;
+}
+span:nth-child(2) {
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid dodgerblue;
+    width: 90%;
+    transition: all 0.5s;
+}
+span:nth-child(3) {
+    bottom: 0px;
+    right: 0px;
+    height: 60%;
+    width: 2px;
+    background-color: dodgerblue;
+    transition: all 0.5s;
+}
+span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 2px;
+    background-color: dodgerblue;
+    transition: all 0.5s;
+}
+@keyframes bling {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.singleBtn {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.singlemiddle {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #4f5773;
+    margin: 40px 0 30px 0;
+}
+.singlemiddle-left,
+.singlemiddle-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+.apy {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Noah;
+    color: #818a97;
+}
+.wrongNet {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Noah;
+    color: white;
+}
+.singlemiddle-lineOut {
+    display: flex;
+    align-items: center;
+}
+.singlemiddle-line {
+    border-left: 1px solid #818a97;
+    height: 80px;
+}
+.ENTamount {
+    color: #b9c1d9;
+    font-size: 20px;
+    font-family: NoahLight;
+    letter-spacing: 2px;
+}
+.ENTinput {
+    display: flex;
+    border: 2px solid #649ab8;
+    padding: 0 10px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.ENTinput-input input {
+    border-style: none !important;
+    width: 310px;
+    height: 50px;
+    font-size: 22px;
+    font-family: Noah;
+    background-color: transparent !important;
+    color: white;
+}
+.ENTinput-input input:focus,
+.ENTinput-input input:hover,
+.ENTinput-input-current input:focus,
+.ENTinput-input-current input:hover {
+    outline: none !important;
+}
+.ENTinput-letter {
+    // width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: Noah;
+}
+.ENTitemOut {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.ENTinput-input-current input {
+    border-style: none !important;
+    width: 260px;
+    height: 50px;
+    font-size: 22px;
+    background-color: transparent !important;
+    font-family: Noah;
+    color: white;
+}
+.day-scrollBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    input{
+        width: 790px;
+        margin: 20px 0 50px 0;
+    }
+}
+.threeday {
+    color: #58d6ec;
+    font-size: 20px;
+    font-family: NoahBold;
+    letter-spacing: 2px;
+}
+.listitem-letter {
+    font-family: Noah;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6d7685;
+    text-align: center;
+}
+.listitem-pro {
+    color: #53d7ec;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: NoahBold;
+}
+
+.listitem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #424b63;
+    height: 100px;
+}
+.investlist {
+    border-top: 1px solid #424b63;
+    border-left: 1px solid #424b63;
+    border-right: 1px solid #424b63;
+    margin-bottom: 30px;
+}
+.barTag{
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: NoahBold;
+    width: 40px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;   
+}
+
+// input[type=range]{
+//     -webkit-appearance: none;
+// }
+
+// input[type=range]::-webkit-slider-runnable-track {
+//     width: 300px;
+//     height: 5px;
+//     background: red;
+//     border: none;
+//     border-radius: 3px;
+// }
+// input[type=range]:-webkit-slider
+// input[type=range]::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     border: none;
+//     height: 16px;
+//     width: 16px;
+//     border-radius: 50%;
+//     background: goldenrod;
+//     margin-top: -4px;
+// }
+
+// input[type=range]:focus {
+//     outline: none;
+// }
+
+// input[type=range]:focus::-webkit-slider-runnable-track {
+//     background: white !important;
+// }
+
+@media screen and (max-width:1200px) {
+    .sideBar{
+        position: absolute;
+        left: -320px;
+        background-color: #0f183d;
+        z-index: 2;
+    }
+    .barTag{
+        display: flex !important;
+        z-index: 3;
+    }
+
+    .sideBar.show {
+        left: 0;
+    }
+}
+@media screen and (max-width:870px) {
+    .singlemiddle{
+        flex-direction: column !important;
+        height: auto !important;
+        align-items: center !important;
+        width: auto !important;
+        padding: 20px !important;
+    }
+    .singlemiddle-line{
+        border-bottom: 1px solid #818a97 !important;
+        height: 0 !important;
+        margin: 20px 0 !important;
+        width: 300px !important;
+    }
+    .singlemiddle-left{
+        width: 100% !important;
+    }
+    .singlemiddle-right{
+        width: 100% !important;
+    }
+    .singleTop-right{
+        display: none !important;
+    }
+    .singleTop-right{
+        display: none !important;
+    }
+    .ENTitemOut{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ENTamount{
+        margin-top: 10px !important;
+    }
+    .singlestake-calcu{
+        width: 100% !important;
+    }
+    .day-scrollBar input{
+        width: 500px !important;
+    }
+}
+@media screen and (max-width:600px) {
+    .day-scrollBar input{
+        width: 400px !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .day-scrollBar input{
+        width: 300px !important;
+    }
+    .singlemiddle-line{
+        width: 200px !important;
+    }
+    .ENTinput{
+        width: 300px !important;
+    }
+    .ENTinput-input input{
+        width: 230px !important;
+    }
+    .ENTinput-input-current input{
+        width: 190px !important;
+    }
+}

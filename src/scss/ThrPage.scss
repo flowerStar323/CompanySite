@@ -1,0 +1,506 @@
+.troot {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url("../assets/secBack.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+body {
+    overflow-x: hidden;
+}
+.tsideBar {
+    min-width: 320px;
+    max-width: 320px;
+    background-color: rgba($color: #0f183d, $alpha: 0.8);
+    padding: 0 10px;
+    height: 100vh;
+    position: relative;
+    transition: .2s all;
+}
+.tlogo {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.tsideItem {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 13px 0;
+    img {
+        margin-right: 20px;
+    }
+}
+.tsidebody {
+    margin-top: 40px;
+    padding-left: 15px;
+}
+.tdiscount {
+    color: #737492;
+    font-size: 17px;
+    font-family: Robot;
+}
+.tbondnavitem {
+    margin-left: 57px;
+}
+.tmim {
+    color: #e0e1fb;
+    font-family: Robot;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 10px 0 30px 0;
+}
+.tfooter {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tfootereter {
+    color: #98979c;
+    font-family: Robot;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 15px 0;
+}
+.tsocialItem img {
+    cursor: pointer;
+}
+.tsocialItem {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.tfooterout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tthrsecRight {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tthrwalletBtnOut {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.tthrwalletBtn {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #62b8fa;
+    width: 250px;
+    height: 45px;
+    background-color: #5b92e2;
+    font-family: Noah;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 10px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+}
+.tsinglestakeOut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tsinglestake-calcu {
+    margin-top: 15px;
+}
+.tcalcu-middle {
+    margin-top: 40px;
+}
+.tsinglestake,
+.tsinglestake-calcu {
+    width: 850px;
+    background-color: rgba($color: #0f183d, $alpha: 0.9);
+    padding: 20px 30px;
+}
+.twrongNet {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: NoahBold;
+    color: white;
+}
+.tsingletop {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid #4f5773;
+    border-bottom: 1px solid #4f5773;
+}
+.tsingleTop-left {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Noah;
+}
+.tsingleTop-right {
+    color: #4f5773;
+    font-family: Robot;
+    font-size: 17px;
+}
+button {
+    background-color: transparent;
+    width: 250px;
+    height: 55px;
+    border: none;
+    color: white !important;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover .ButtonText {
+    animation: bling 1.3s infinite;
+}
+button:hover span:nth-child(3) {
+    height: 100%;
+}
+button:hover span:nth-child(4) {
+    height: 100%;
+}
+button:hover span:nth-child(1) {
+    width: 99%;
+}
+button:hover span:nth-child(2) {
+    width: 99%;
+}
+span {
+    position: absolute;
+}
+span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    border: 1px solid dodgerblue;
+    width: 90%;
+    transition: all 0.5s;
+}
+span:nth-child(2) {
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid dodgerblue;
+    width: 90%;
+    transition: all 0.5s;
+}
+span:nth-child(3) {
+    bottom: 0px;
+    right: 0px;
+    height: 60%;
+    width: 2px;
+    background-color: dodgerblue;
+    transition: all 0.5s;
+}
+span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 2px;
+    background-color: dodgerblue;
+    transition: all 0.5s;
+}
+@keyframes bling {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.tsingleBtn {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.tsinglemiddle {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #4f5773;
+    margin: 40px 0 30px 0;
+}
+.tsinglemiddle-left,
+.tsinglemiddle-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+.tapy {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Noah;
+    color: #818a97;
+}
+.twrongNet {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: NoahBold;
+    color: white;
+}
+.tsinglemiddle-lineOut {
+    display: flex;
+    align-items: center;
+}
+.tsinglemiddle-line {
+    border-left: 1px solid #818a97;
+    height: 80px;
+}
+.tbondheader {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #818a97;
+}
+.tbondbody {
+    display: flex;
+    margin: 15px 0 30px 0;
+}
+.tbon {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: NoahBold;
+    min-width: 250px;
+    padding: 20px;
+}
+.tpri {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: NoahBold;
+    min-width: 120px;
+}
+.troi {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: NoahBold;
+    min-width: 100px;
+}
+.tpur {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: NoahBold;
+    width: 100%;
+}
+.tbonitem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tbonbody {
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    min-width: 250px;
+    padding: 20px;
+    flex-direction: column;
+    border-right: 1px solid #818a97;
+}
+.tpribody {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: NoahBold;
+    min-width: 120px;
+    flex-direction: column;
+    border-right: 1px solid #818a97;
+}
+.tavax {
+    font-family: NoahBold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.tbonletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.tgetavax {
+    color: #5a6379;
+    font-family: Robot;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.tpribodyVal{
+    font-family: Noah;
+    letter-spacing: 2px;
+    color: #bbc2db;
+    font-size: 20px;
+}
+.tpriitem{
+    display: flex;
+    height: 67px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.troibody{
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: NoahBold;
+    min-width: 100px;
+    border-right: 1px solid #818a97;
+}
+.tpurbody{
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0 20px;
+    font-family: NoahBold;
+    width: 100%;
+    flex-direction: column;
+}
+.tbonletter-pur {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 25px;
+    align-items: center;
+}
+.tbondbtn{
+    border: 2px solid #72b0c7;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    height: 50px;
+}
+.tbondheaderOut-out{
+    width: 100%;
+}
+.tbondheaderOut{
+    width: 780px;
+}
+.tbarTag{
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: NoahBold;
+    width: 40px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;   
+}
+@media screen and (max-width:1800px) {
+    .troot{
+        height: 100% !important;
+        background-size: cover  !important;
+    }
+}
+@media screen and (max-width:1200px) {
+    .tsinglestake{
+        margin-top: 80px !important;
+    }
+    .tsideBar{
+        position: absolute;
+        left: -320px;
+        background-color: #0f183d;
+        z-index: 2;
+    }
+    .tbarTag{
+        display: flex !important;
+        z-index: 3;
+    }
+    .tsideBar.show {
+        left: 0;
+    }
+}
+@media screen and (max-width:870px) {
+    .tbondheaderOut-out{
+        overflow-x: scroll !important;
+    }
+    .tsinglestake{
+        width: 100% !important;
+    }
+    .tsinglemiddle{
+        flex-direction: column !important;
+        height: auto !important;
+        align-items: center !important;
+        width: auto !important;
+        padding: 20px !important;
+    }
+    .tsinglemiddle-line{
+        border-bottom: 1px solid #818a97 !important;
+        height: 0 !important;
+        margin: 20px 0 !important;
+        width: 250px !important;
+    }
+    .tsinglemiddle-left{
+        width: 100% !important;
+    }
+    .tsinglemiddle-right{
+        width: 100% !important;
+    }
+    .tsingleTop-right{
+        display: none !important;
+    }
+    .tapy{
+        text-align: center !important;
+    }
+}

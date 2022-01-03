@@ -1,0 +1,193 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.root{
+    width: 100vw;
+    height: 100vh;
+    // background-image: url('../assets/backImg.png');
+    // background-size: 100% 100%;
+    position: relative;
+}
+.videoTag{
+    position: fixed;
+    z-index: -100;
+}
+.title{
+    position: absolute;
+    display: flex;
+    font-size: 23px;
+    color: white;
+    font-family: Noah;
+    letter-spacing: 10px;
+    top: 30px;
+    left: 50px;
+}
+.eter{
+    color: #e2e7ff;
+}
+.dao{
+    font-family: NoahBold;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.Btn{
+    display: flex;
+    position: relative;
+}
+.socialItem{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+button {
+    background-color: transparent;
+    width: 300px;
+    height: 60px;
+    border: none;
+    color: white !important;
+    position: relative;
+    cursor: pointer;
+    font-size: 26px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button:hover .ButtonText{
+    animation: bling 1.3s infinite;
+  }
+  button:hover span:nth-child(3){
+    height: 100%;
+  }
+  button:hover span:nth-child(4){
+    height: 100%;
+  }
+  button:hover span:nth-child(1){
+    width: 99%;
+  }
+  button:hover span:nth-child(2){
+    width: 99%;
+  }
+  span{
+      position: absolute;
+  }
+  span:nth-child(1){
+      top: 0px;
+      left: 0px;
+      border: 1px solid dodgerblue;
+      width: 90%;
+      transition: all 0.5s;
+
+  }
+  span:nth-child(2){
+      bottom: 0px;
+      right: 0px;
+      border: 1px solid dodgerblue;
+      width: 90%;
+      transition: all 0.5s;
+
+  }
+  span:nth-child(3){
+      bottom: 0px;
+      right: 0px;
+      height: 60%;
+      width: 2px;
+      background-color: dodgerblue;
+      transition: all 0.5s;
+  }
+  span:nth-child(4){
+      top: 0px;
+      left: 0px;
+      height: 60%;
+      width: 2px;
+      background-color: dodgerblue;
+      transition: all 0.5s;
+  }
+  .middleBtn{
+      margin: 0 30px;
+  }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footereter{
+    color: #98979c;
+    font-family: Robot;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.socialItem img{
+    cursor: pointer;
+}
+@keyframes bling {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+@media screen and (max-width:1800px) {
+    .root{
+        background-size: cover !important;
+        background-position: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    button{
+        width: 200px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+    }
+    .logo img{
+        width: 400px !important;
+    }
+    .title{
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width:700px) {
+    .logo img{
+        width: 300px !important;
+    }
+    .Btn{
+        flex-direction: column!important;
+    }
+    .middleBtn{
+        margin: 20px 0 !important;
+    }
+    .footereter{
+        margin: 10px !important;
+    }
+    .socialItem{
+        width: 150px !important;
+        div{
+            img{
+                width: 30px !important;
+            }
+        }
+    }
+}
