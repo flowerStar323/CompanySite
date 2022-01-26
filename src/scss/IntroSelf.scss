@@ -1,0 +1,194 @@
+.Croot {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.Cmaindiv {
+    width: 1140px;
+    height: 683px;
+    border-radius: 14px;
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BackBtnOut {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86a9f3;
+    .BackBtn {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000 !important;
+    }
+}
+.NextBtnOut {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    right: 33px;
+    bottom: 25px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #86a9f3;
+    .NextBtn {
+        color: #86a9f3;
+        font-size: 25px;
+    }
+}
+.Ctitle {
+    color: #b9d7ff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 53px;
+    margin-bottom: 70px !important;
+}
+.photo {
+    width: 267px;
+    height: 273px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.infordetail {
+    display: flex;
+    align-items: center;
+}
+.group {
+    p {
+        color: #fff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    p > span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+    .selfinput {
+        background-color: #fff;
+        width: 647px;
+        height: 44px;
+        border-style: none;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .selfinput:focus,
+    .selfinput:active {
+        outline: none;
+    }
+}
+.detailRight {
+    margin-left: 56px;
+}
+.grouptitle {
+    margin-top: 32px;
+    p {
+        color: #fff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    p > span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-left: 20px;
+    }
+    .selfinput {
+        background-color: #fff;
+        width: 647px;
+        height: 44px;
+        border-radius: 10px;
+        border-style: none;
+        padding-left: 10px;
+    }
+    .selfinput:focus,
+    .selfinput:active {
+        outline: none;
+    }
+}
+
+.grouplinkedin {
+    margin-top: 32px;
+    p {
+        color: #fff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .linkedinUrl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+        .linkedininput {
+            background: #ffffff;
+            border-radius: 10px;
+            color: #000;
+            width: 359px;
+            padding: 0 10px;
+            border-style: none;
+            height: 44px;
+        }
+        .linkedininput:focus,
+        .linkedininput:active {
+            outline: none;
+        }
+    }
+}
+.cameraIcon {
+    color: #fff;
+    font-size: 50px;
+    margin-top: -20px;
+    cursor: pointer;
+}

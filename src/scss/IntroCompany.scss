@@ -1,0 +1,164 @@
+.DCroot {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.DCmaindiv {
+    width: 1140px;
+    height: 683px;
+    border-radius: 14px;
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DBackBtnOut {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86a9f3;
+    .DBackBtn {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000 !important;
+    }
+}
+.DNextBtnOut {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    right: 33px;
+    bottom: 25px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #86a9f3;
+    .DNextBtn {
+        color: #86a9f3;
+        font-size: 25px;
+    }
+}
+.DCtitle {
+    color: #b9d7ff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 53px;
+    margin-bottom: 30px !important;
+}
+.Dphoto {
+    width: 267px;
+    height: 273px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.Dinfordetail {
+    display: flex;
+    align-items: center;
+}
+.Dgroup {
+    p {
+        color: #fff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #ffffff;
+            margin-left: 20px;
+        }
+    }
+    .Dselfinput {
+        background-color: #fff;
+        width: 647px;
+        height: 44px;
+        border-style: none;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    .Dselfinput:focus,
+    .Dselfinput:active {
+        outline: none;
+    }
+}
+.DdetailRight {
+    margin-left: 56px;
+}
+.Dgrouptitle {
+    margin-top: 32px;
+    p {
+        color: #fff;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #ffffff;
+            margin-left: 20px;
+        }
+    }
+    .Dselfinput {
+        background-color: #fff;
+        width: 647px;
+        height: 44px;
+        border-radius: 10px;
+        border-style: none;
+        padding-left: 10px;
+    }
+    .DselfinputLink {
+        background-color: #fff;
+        width: 570px;
+        height: 44px;
+        border-radius: 10px;
+        border-style: none;
+        padding-left: 10px;
+    }
+    .DselfinputLink:focus,
+    .DselfinputLink:active,
+    .Dselfinput:focus,
+    .Dselfinput:active {
+        outline: none;
+    }
+}
+
+.DcameraIcon {
+    color: #fff;
+    font-size: 50px;
+    margin-top: -20px;
+    cursor: pointer;
+}

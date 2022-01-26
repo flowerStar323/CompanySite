@@ -1,193 +1,161 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-.root{
+.root {
+    display: flex;
     width: 100vw;
     height: 100vh;
-    // background-image: url('../assets/backImg.png');
-    // background-size: 100% 100%;
-    position: relative;
+    justify-content: center;
+    align-items: center;
 }
-.videoTag{
-    position: fixed;
-    z-index: -100;
-}
-.title{
-    position: absolute;
+.maindiv {
+    width: 1140px;
+    height: 683px;
+    border-radius: 14px;
     display: flex;
-    font-size: 23px;
+    overflow: hidden;
+}
+.mainleft {
+    width: 60%;
+    background-color: #000;
+    padding-left: 70px;
+    padding-top: 104px;
     color: white;
-    font-family: Noah;
-    letter-spacing: 10px;
-    top: 30px;
-    left: 50px;
 }
-.eter{
-    color: #e2e7ff;
-}
-.dao{
-    font-family: NoahBold;
-}
-.mainDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-.Btn{
-    display: flex;
+.mainright {
+    width: 40%;
+    background: #b2d3ff;
     position: relative;
 }
-.socialItem{
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
+.welcomeText {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 26px;
+    font-size: 48px;
+    line-height: 58px;
+    width: 287px;
 }
-button {
-    background-color: transparent;
-    width: 300px;
-    height: 60px;
-    border: none;
-    color: white !important;
-    position: relative;
-    cursor: pointer;
-    font-size: 26px;
-    letter-spacing: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  button:hover .ButtonText{
-    animation: bling 1.3s infinite;
-  }
-  button:hover span:nth-child(3){
-    height: 100%;
-  }
-  button:hover span:nth-child(4){
-    height: 100%;
-  }
-  button:hover span:nth-child(1){
-    width: 99%;
-  }
-  button:hover span:nth-child(2){
-    width: 99%;
-  }
-  span{
-      position: absolute;
-  }
-  span:nth-child(1){
-      top: 0px;
-      left: 0px;
-      border: 1px solid dodgerblue;
-      width: 90%;
-      transition: all 0.5s;
-
-  }
-  span:nth-child(2){
-      bottom: 0px;
-      right: 0px;
-      border: 1px solid dodgerblue;
-      width: 90%;
-      transition: all 0.5s;
-
-  }
-  span:nth-child(3){
-      bottom: 0px;
-      right: 0px;
-      height: 60%;
-      width: 2px;
-      background-color: dodgerblue;
-      transition: all 0.5s;
-  }
-  span:nth-child(4){
-      top: 0px;
-      left: 0px;
-      height: 60%;
-      width: 2px;
-      background-color: dodgerblue;
-      transition: all 0.5s;
-  }
-  .middleBtn{
-      margin: 0 30px;
-  }
-.footer{
+.SubText {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 50px;
+    p {
+        margin: 5px 0 0 0;
+        color: white;
+    }
+    .rightIcon {
+        font-weight: bold;
+        font-size: 30px;
+        margin-right: 5px;
+    }
+}
+.closeIcon {
+    font-size: 30px;
     position: absolute;
-    bottom: 0;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.joinCommunity {
+    width: 515px;
+    height: 591.5px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 54px;
+    right: 70px;
+    padding: 62px 51px 0 54px;
+    p {
+        font-family: Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -1px;
+        color: #818181;
+    }
+}
+.title {
+    font-family: SansBold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin-top: 15px;
+    color: #000000;
+}
+p {
+    color: #000;
+    font-family: SansBold;
+    margin: 0;
+}
+input {
+    border: 1px solid #dddddd;
+    background-color: transparent;
     width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 45px;
+    font-size: 17px;
+}
+input:focus,
+input:active {
+    outline: none !important;
+    border: 2px solid #77a0d9;
+}
+.emailinput {
+    display: flex;
+    align-items: center;
+}
+.emailIcon {
+    font-size: 22px;
+    color: #99989e;
+    position: absolute;
+    margin-left: 15px;
+}
+.emailPart {
+    margin-top: 30px;
+    p {
+        font-family: inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.1px;
+        color: #393a3e;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+.SignBtn {
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #3183ff;
+    border-radius: 30px;
+    margin-top: 60px;
+    font-size: 20px;
+    color: white;
 }
-.footereter{
-    color: #98979c;
-    font-family: Robot;
-    letter-spacing: 2px;
-    margin: 20px 0;
-}
-.socialItem img{
-    cursor: pointer;
-}
-@keyframes bling {
-    0%{
-      opacity: 1;
-    }
-    50%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-@media screen and (max-width:1800px) {
-    .root{
-        background-size: cover !important;
-        background-position: center;
-    }
-}
-@media screen and (max-width:1000px) {
-    button{
-        width: 200px !important;
-        height: 50px !important;
-        font-size: 20px !important;
-    }
-    .logo img{
-        width: 400px !important;
-    }
-    .title{
-        font-size: 20px !important;
-    }
-}
-@media screen and (max-width:700px) {
-    .logo img{
-        width: 300px !important;
-    }
-    .Btn{
-        flex-direction: column!important;
-    }
-    .middleBtn{
-        margin: 20px 0 !important;
-    }
-    .footereter{
-        margin: 10px !important;
-    }
-    .socialItem{
-        width: 150px !important;
-        div{
-            img{
-                width: 30px !important;
-            }
-        }
+.login {
+    margin-top: 20px;
+    display: flex;
+    font-family: inter;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    color: #9f9fa1;
+    p {
+        color: #000;
+        margin-left: 10px;
+        font-family: inter;
+        font-style: normal;
+        letter-spacing: 0.1px;
+        font-size: 16px;
+        font-weight: normal;
     }
 }

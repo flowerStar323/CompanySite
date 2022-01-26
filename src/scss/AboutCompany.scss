@@ -1,0 +1,102 @@
+.ACroot {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.ACmaindiv {
+    width: 1140px;
+    height: 683px;
+    border-radius: 14px;
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABackBtnOut {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86a9f3;
+    .ABackBtn {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000 !important;
+    }
+}
+.ANextBtnOut {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+.ANextBtn {
+    width: 98px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 11px;
+    display: flex;
+    background-color: #86a9f3;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+}
+.ACtitle {
+    color: #b9d7ff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 53px;
+    margin-bottom: 48px;
+}
+.Adetail {
+    .textarea {
+        width: 930px;
+        min-width: 930px;
+        height: 240px;
+        min-height: 240px;
+        padding: 10px;
+        border-radius: 14px;
+    }
+    .textarea:focus,
+    .textarea:active {
+        outline: none;
+    }
+}
+.AdetailTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #ffffff;
+}
+.AdetailContent {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    width: 881px;
+    color: #ffffff;
+    margin: 20px 0 23px 0;
+}
