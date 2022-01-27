@@ -1,0 +1,288 @@
+.Hroot {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.Hmaindiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 20px;
+    width: 100%;
+    height: 100px;
+    background: #272727;
+    font-family: SansBold;
+    color: #fff;
+}
+.headerleft {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    p {
+        margin: 0;
+    }
+    .homelogo {
+        margin-right: 30px;
+        cursor: pointer;
+    }
+}
+.headerright {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    span {
+        cursor: pointer;
+    }
+    .AccessBtn {
+        width: 150px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 30px;
+        background-color: #82afea;
+        height: 50px;
+        color: #000;
+    }
+}
+.hometitle {
+    font-family: Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 150%;
+    text-align: center;
+    width: 600px;
+    color: #ffffff;
+}
+.topDivOut {
+    background-color: #000;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homesubtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    width: 1050px;
+    color: #ffffff;
+    margin-top: 70px;
+}
+.joinText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.joinBtn {
+    width: 200px;
+    height: 70px;
+    background: #72aaf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 30px;
+}
+.bottomDivOut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottomDiv {
+    width: 1480px;
+}
+.bottomtitle {
+    font-family: Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 90px;
+}
+.verkada {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    P {
+        color: #041725;
+        font-size: 150px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+}
+.roadmap {
+    margin-bottom: 110px;
+    p {
+        font-family: Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 150%;
+        color: #000000;
+    }
+}
+.roadmapNum {
+    display: flex;
+    justify-content: space-between;
+}
+.roadmapNumItem {
+    display: flex;
+    align-items: center;
+}
+.roadmapText {
+    margin-left: 30px;
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 116%;
+        width: 200px;
+        margin: 0;
+        color: #000000;
+    }
+    .roadmapsub {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 155%;
+        width: 240px;
+        color: #000000;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .roadmap {
+        p {
+            margin-left: 20px !important;
+        }
+    }
+    .bottomtitle {
+        margin-left: 20px !important;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .roadmapNum {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .roadmapNumItem {
+        margin: 20px 0 !important;
+    }
+    .roadmapText {
+        .roadmapsub {
+            margin-left: 20px !important;
+        }
+    }
+}
+@media screen and (max-width: 1040px) {
+    .homesubtitle {
+        width: 95% !important;
+    }
+    .verkada {
+        img {
+            width: 100px !important;
+        }
+        p {
+            font-size: 90px !important;
+            margin-bottom: 10px !important;
+            margin-left: 20px !important;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    .headerleft > p {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hometitle {
+        width: 95% !important;
+        font-size: 35px !important;
+    }
+    .homesubtitle {
+        font-size: 25px !important;
+        margin-top: 30px !important;
+    }
+    .joinText {
+        font-size: 20px !important;
+        margin-top: 50px !important;
+    }
+    .bottomtitle {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+    .verkada {
+        img {
+            width: 70px !important;
+        }
+        p {
+            font-size: 50px !important;
+            margin-bottom: 0 !important;
+            margin-left: 20px !important;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .roadmapNumItem {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .roadmapText {
+        margin-left: 0 !important;
+        p {
+            font-size: 20px !important;
+            width: 150px !important;
+        }
+        .roadmapsub {
+            font-size: 15px !important;
+            margin-left: 20px !important;
+            margin-top: 5px !important;
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .AccessBtn {
+        display: none !important;
+    }
+    .roadmapsub {
+        width: 95% !important;
+    }
+    .verkada {
+        flex-direction: column !important;
+    }
+}
