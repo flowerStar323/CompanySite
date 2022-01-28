@@ -9,11 +9,15 @@ class FirstPage extends React.Component {
                 <div className="Hmaindiv">
                     <div className="header">
                         <div className="headerleft">
-                            <img src="img/homelogo.png" width={50} className="homelogo" />
+                            <Link to='/home'>
+                                <img src="img/homelogo.png" width={50} className="homelogo" />
+                            </Link>
                             <p>Moonhub</p>
                         </div>
                         <div className="headerright">
-                            <span>Sign In</span>
+                            <Link to='/'>
+                                <span>Sign In</span>
+                            </Link>
                             <div className="AccessBtn">Get Access</div>
                         </div>
                     </div>

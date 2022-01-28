@@ -41,7 +41,11 @@ class FirstPage extends React.Component {
                                 </div>
                             </div>
                             <Link to="/choose"><div className="SignBtn">Sign Up</div></Link>
-                            <div className="login">Already a memeber? <p>Login here<BiRightArrowAlt /></p></div>
+                            <div className="login">Already a memeber?
+                                <Link to='/home'>
+                                    <p>Login here<BiRightArrowAlt /></p>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

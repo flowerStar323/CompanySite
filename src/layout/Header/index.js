@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import { RiMessage2Fill } from "react-icons/ri";
 import { FaUserCircle, FaBars } from "react-icons/fa";
@@ -10,12 +11,20 @@ export default function Header() {
             <div className="CmainHeader">
                 <div className="CmainHeaderLeft">
                     <div className="CHeaderlogo">
-                        <img src="img/homelogo.png" width={40} className="Chomelogo" />
+                        <Link to='/home'>
+                            <img src="img/homelogo.png" width={40} className="Chomelogo" />
+                        </Link>
                         <p>Moonhub</p>
                     </div>
-                    <div className="CheaderItem">Companies</div>
-                    <div className="CheaderItem">Referrals</div>
-                    <div className="CheaderItem">Members</div>
+                    <Link to='/yourcompany'>
+                        <div className="CheaderItem">Companies</div>
+                    </Link>
+                    <Link to='/referrals'>
+                        <div className="CheaderItem">Referrals</div>
+                    </Link>
+                    <Link to='/members'>
+                        <div className="CheaderItem">Members</div>
+                    </Link>
                 </div>
                 <div className="CmainHeaderRight">
                     <GiTwoCoins className="CHeaderRightItemCoin" />
@@ -25,16 +34,22 @@ export default function Header() {
                 </div>
 
             </div>
-            {Resflag && <div className="CResPanel">
-                <div className="CheaderItemRes">Companies</div>
-                <div className="CheaderItemRes">Referrals</div>
-                <div className="CheaderItemRes">Members</div>
-                <div className="CResItems">
-                    <GiTwoCoins className="CResHeaderRightItemCoin" />
-                    <RiMessage2Fill className="CResHeaderRightItem" />
-                    <FaUserCircle className="CResHeaderRightItemUser" />
+            {
+                Resflag && <div className="CResPanel">
+                    <div className="CheaderItemRes">Companies</div>
+                    <Link to='/referrals'>
+                        <div className="CheaderItemRes">Referrals</div>
+                    </Link>
+                    <Link to='/members'>
+                        <div className="CheaderItemRes">Members</div>
+                    </Link>
+                    <div className="CResItems">
+                        <GiTwoCoins className="CResHeaderRightItemCoin" />
+                        <RiMessage2Fill className="CResHeaderRightItem" />
+                        <FaUserCircle className="CResHeaderRightItemUser" />
+                    </div>
                 </div>
-            </div>}
-        </div>
+            }
+        </div >
     );
 }

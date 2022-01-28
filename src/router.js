@@ -13,6 +13,11 @@ const Home = lazy(() => import("./pages/Home"));
 const PpartnerHome = lazy(() => import("./pages/PpartnerHome"));
 const YourCompany = lazy(() => import("./pages/YourCompany"));
 const ChattingPage = lazy(() => import("./pages/ChattingPage"));
+const ExploreMembers = lazy(() => import("./pages/ExploreMembers"));
+const YourPartners = lazy(() => import("./pages/YourPartners"));
+const Owner = lazy(() => import("./pages/Owner"));
+const Review = lazy(() => import("./pages/Review"));
+const Referrals = lazy(() => import("./pages/Referrals"));
 
 const AppRouter = () => {
   return (
@@ -28,6 +33,11 @@ const AppRouter = () => {
         <Route exact path="/partner" component={PpartnerHome} />
         <Route exact path="/yourcompany" component={YourCompany} />
         <Route exact path="/chatroom" component={ChattingPage} />
+        <Route exact path="/members" component={ExploreMembers} />
+        <Route exact path="/partners" component={YourPartners} />
+        <Route exact path="/owner" component={Owner} />
+        <Route exact path="/review" component={Review} />
+        <Route exact path="/referrals" component={Referrals} />
       </Switch>
     </React.Fragment>
   );
