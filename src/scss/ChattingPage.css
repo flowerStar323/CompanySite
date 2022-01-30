@@ -2,7 +2,6 @@
     width: 100vw;
     margin-top: 100px;
     height: calc(100vh - 100px);
-    border: 1px solid red;
     background-color: #f1f2f4;
     padding: 10px;
 }
@@ -64,7 +63,6 @@
 }
 
 .mainuserlist {
-    border: 1px solid red;
     margin-top: 70px;
     height: calc(100vh - 312px);
     overflow-y: scroll;
@@ -96,7 +94,6 @@
 }
 
 .historyinput {
-    border: 1px solid red;
     position: relative;
     border: 1px solid #efefef;
     width: 250px;
@@ -196,4 +193,179 @@
     margin-right: 5px;
     cursor: pointer;
 
+}
+
+.Chatman {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chatphoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 15px;
+}
+
+.chatname {
+    color: #000;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Montserrat;
+}
+
+.chatjob {
+    color: #000;
+    font-size: 17px;
+    line-height: 15px;
+    font-family: Montserrat;
+}
+
+.chathistory {
+    color: #9c9b9a;
+    font-size: 15px;
+    font-family: Montserrat;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+.PHPayJobcardContainer {
+    height: 67px;
+    width: 550px;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 8.76px 26.28px rgba(31, 31, 51, 0.06);
+    border-radius: 10px;
+    padding: 5px 32px 0 0;
+    margin-top: 10px;
+}
+
+.PHPayPrice {
+    display: flex;
+    flex-direction: row;
+}
+
+.PHPaySubprice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.PHPayvalue {
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #5192ff;
+}
+
+.PHPayJobcardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PHPayTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.PHPayMain {
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.PHPayMainTitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 2px;
+    color: #37404e;
+}
+
+.PHPaydetail {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a0abb8;
+    display: flex;
+    align-items: center;
+}
+
+.PHPayyoudotcom {
+    color: #9777fa;
+    width: 40px;
+    font-weight: bold;
+}
+
+.PHPaypos {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.PHPayjob {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.PHPayclock_icon {
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1020px) {
+    .historyinput {
+        margin-right: 5px !important;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .UserNamePart {
+        flex-direction: column !important;
+        height: auto !important;
+        padding-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .historyinput {
+        margin: 0 !important;
+    }
+
+    .displayname {
+        margin: 10px !important;
+    }
+
+    .PHPayJobcardContainer {
+        width: 98% !important;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .mainwindow {
+        display: none !important;
+    }
+
+    .Userlist {
+        width: 100% !important;
+    }
 }

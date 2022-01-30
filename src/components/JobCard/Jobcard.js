@@ -15,7 +15,7 @@ const Jobcard = () => {
                     <div className="Main">
                         <span className="MainTitle">Front-end Engineer</span>
                         <div className="detail">
-                            <a href="/">you.com</a>
+                            <div className="youdotcom">you.com</div>
                             <div className="pos">
                                 <GiPositionMarker />
                                 <span>Remote</span>
@@ -29,18 +29,17 @@ const Jobcard = () => {
                     </div>
                 </div>
                 <div className="Price">
-                    <span className="Mainprice">$1000</span>
+                    {/* <span className="Mainprice">$1000</span>
                     <div className="Subprice">
                         <div className="value">100</div>
                         <img src={card_mark} alt="card_mark" width="42px" height="33px" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="JobcardBody">
                 Looking for strong FE engineer with 2-3 years experience in Javascript,
                 React stack. Sells: lots of ownership over product.
             </div>
-            <RiDeleteBin5Line className="delete_icon" />
         </div>
     );
 };

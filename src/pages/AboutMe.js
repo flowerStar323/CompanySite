@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../scss/AboutMe.scss";
 class ChoosePage extends React.Component {
     render() {
@@ -10,7 +10,10 @@ class ChoosePage extends React.Component {
                     <div className="ABackBtnOut" onClick={() => { window.location.href = '/intro' }}>
                         <FaChevronLeft className="ABackBtn" />
                     </div>
-                    <div className="ACtitle">What brings you here?</div>
+                    <div className="AANextBtnOut">
+                        <FaChevronRight className="AANextBtn" />
+                    </div>
+                    <div className="ACtitle">Tell us about you</div>
                     <div className="Adetail">
                         <div className="AdetailTitle">About Me</div>
                         <div className="AdetailContent">

@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    height: 150px;
+    background: linear-gradient(180deg, #000000 0%, #999999 103.27%);
+    height: 250px;
     width: 100vw;
     border-radius: 0 0 30px 30px;
     color: #fff;
@@ -49,11 +49,12 @@
         padding: 0 10px;
         font-size: 20px;
         color: #000;
-        transition: all 0exp3s;
+        transition: all 0.3s;
     }
     input:focus,
     input:active {
         outline: none !important;
+        border: 2px solid #00a8dd;
     }
 }
 .ExpsearchIcon {

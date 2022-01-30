@@ -14,65 +14,22 @@ export default function PpartnerHome() {
             <div className="Expmaindiv">
                 <div className="ExpGroups">
                     <div className="ExpGroupTitle">
-                        <div className="ExpGroupTitleLeft">
-                            Your Companies
-                        </div>
+                        <div className="ExpGroupTitleLeft" />
                         <div className="ExpGroupTitleRight">
                             <input />
                             <BiSearch className="ExpsearchIcon" />
                         </div>
                     </div>
-                    <div className="ExpCardRow">
+                    {[...new Array(10)].map((e, k) => <div className="ExpCardRow" key={k}>
                         <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='You.com' subtitle='32 jobs' actNum='3 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                    </div>
-                    <div className="ExpCardRow">
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='You.com' subtitle='32 jobs' actNum='3 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
+                            <Card logo='img/codelogo.png' title='Verkada' subtitle='32 roles' />
+                            <Card logo='img/codelogo.png' title='Verkada' subtitle='10 roles' />
                         </div>
                         <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
+                            <Card logo='img/codelogo.png' title='Verkada' subtitle='10 roles' />
+                            <Card logo='img/codelogo.png' title='Verkada' subtitle='10 roles' />
                         </div>
-                    </div>
-                </div>
-                <div className="ExpGroups">
-                    <div className="ExpGroupTitle">
-                        <div className="ExpGroupTitleLeft">
-                            Waiting for Ambassador Approval
-                        </div>
-                        <div className="ExpGroupTitleRight">
-                            <input />
-                            <BiSearch className="ExpsearchIcon" />
-                        </div>
-                    </div>
-                    <div className="ExpCardRow">
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='You.com' subtitle='32 jobs' actNum='3 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                    </div>
-                    <div className="ExpCardRow">
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='You.com' subtitle='32 jobs' actNum='3 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                        <div className="ExpcardTwo">
-                            <Card logo='img/cardlogo_you.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                            <Card logo='img/cardlogo_V.png' title='Verkada' subtitle='10 jobs' actNum='5 active referrals' />
-                        </div>
-                    </div>
+                    </div>)}
                 </div>
             </div>
             <Footer />

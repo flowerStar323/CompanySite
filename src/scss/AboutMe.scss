@@ -10,7 +10,7 @@
     height: 683px;
     border-radius: 14px;
     display: flex;
-    background-color: #000;
+    background: linear-gradient(180deg, #000000 0%, #b1b1b1 100%);
     overflow: hidden;
     position: relative;
     display: flex;
@@ -30,11 +30,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #86a9f3;
+    border: 2px solid#fff;
     .ABackBtn {
         font-size: 25px;
         font-weight: bold;
-        color: #000 !important;
+        color: #fff !important;
+    }
+}
+.AANextBtnOut {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    right: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid#fff;
+    .AANextBtn {
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff !important;
     }
 }
 .ANextBtnOut {
@@ -44,22 +62,22 @@
     justify-content: flex-end;
 }
 .ANextBtn {
-    width: 98px;
-    height: 64px;
+    width: 120px;
+    height: 45px;
     cursor: pointer;
     border-radius: 11px;
     display: flex;
-    background-color: #86a9f3;
+    background-color: #00a8dd;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #fff;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 .ACtitle {
-    color: #b9d7ff;
+    color: #fff;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -99,4 +117,42 @@
     width: 881px;
     color: #ffffff;
     margin: 20px 0 23px 0;
+}
+@media screen and (max-width: 1150px) {
+    .ACmaindiv {
+        width: 97% !important;
+    }
+}
+@media screen and (max-width: 970px) {
+    .ACmaindiv {
+        height: auto !important;
+    }
+    .AdetailContent {
+        width: 97% !important;
+        text-align: center !important;
+    }
+    .ACtitle {
+        margin-top: 100px;
+    }
+    .textarea {
+        width: 97% !important;
+        min-width: auto !important;
+    }
+    .Adetail {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ANextBtnOut {
+        width: 97% !important;
+        margin-bottom: 30px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ACtitle {
+        font-size: 30px !important;
+    }
+    .AdetailTitle {
+        font-size: 25px !important;
+    }
 }

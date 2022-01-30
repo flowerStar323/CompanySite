@@ -2,13 +2,31 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #272727;
+    background-color: #000;
     height: 100px;
     position: fixed;
     z-index: 10 !important;
     border-bottom: 1px solid grey;
     left: 0;
     top: 0;
+}
+
+.CheadermatchBtn, .CheadermatchBtnRes {
+    width: 192px;
+    height: 51px;
+    font-family: Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #00A8DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-right: 20px;
 }
 
 .CmainHeader {
@@ -120,13 +138,27 @@
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:970px) {
     .CResPanel {
         display: none !important;
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:970px) {
+    .ResMatchOut {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .CheadermatchBtn {
+        display: none !important;
+    }
+
+    .CheadermatchBtnRes {
+        margin-right: 0 !important;
+        margin-bottom: 30px !important;
+    }
+
     .CResHeaderRightItemBar {
         display: flex !important;
     }

@@ -11,7 +11,7 @@ class Intro extends React.Component {
         return (
             <div className="Croot">
                 <div className="Cmaindiv">
-                    <Link to="/choose">
+                    <Link to="/">
                         <div className="BackBtnOut">
                             <FaChevronLeft className="BackBtn" />
                         </div>
@@ -24,8 +24,10 @@ class Intro extends React.Component {
                     <div className="Ctitle">Introduce yourself to Moonhub members:</div>
                     <div className="infordetail">
                         <div className="detailLeft">
-                            <div className="photo" />
-                            <BsFillCameraFill className="cameraIcon" onClick={() => this.filedialog()} />
+                            <div className="photo" >
+                                <img src="img/woman.png" width="100%" />
+                                <BsFillCameraFill className="cameraIcon" onClick={() => this.filedialog()} />
+                            </div>
                         </div>
                         <div className="detailRight">
                             <div className="group">

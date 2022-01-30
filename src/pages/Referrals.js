@@ -1,339 +1,66 @@
 import React from "react";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { GiPositionMarker } from "react-icons/gi";
-import { MdWorkOutline } from "react-icons/md";
-import favicon from "../assets/images/favicon.png";
-import Message from "../assets/images/message-dark.png";
 import Header from "../layout/Header";
-import Search from "../components/Search/Search";
+import Footer from "../layout/Footer";
+import RewardsCard from "../components/RewardCard";
 import "../scss/Referrals.scss";
 const Referrals = () => {
     return (
         <div className="ReviewContainer">
             <Header />
-            <div className="ReviewTitle">My Referrals</div>
-            <div className="ReviewContent">
-                <div className="ContentHeader">
-                    <Search />
+            <div className="ReviewTitle">Your Referrals</div>
+            <div className="Reviewmaindiv">
+                <div className="ReviewmainTitle">Refer a Contact</div>
+                <div className="Reviewmainsubtitle">
+                    <p>When you refer someone to Moonhub:</p>
+                    <ul>
+                        <li>
+                            Earn
+                            <span> 5</span>
+                            <img src="img/logo.png" width={43} height={43} style={{ margin: '0 5px' }} />
+                            when they join.
+                        </li>
+                        <li>
+                            Earn
+                            <span> 3% of all</span>
+                            <img src="img/logo.png" width={43} height={43} style={{ margin: '0 5px' }} />
+                            they earn through referrals in their first year.
+                        </li>
+                        <li>
+                            Earn
+                            <span> 25</span>
+                            <img src="img/logo.png" width={43} height={43} style={{ margin: '0 5px' }} />
+                            and
+                            <span> $500</span> if they find a job on Moonhub in their first year.
+                        </li>
+                    </ul>
                 </div>
-                <div className="ReviewList">
-                    <div className="ReviewListHeader">
-                        <span>Role</span>
-                        <span>Partner</span>
-                        <span>Candidate</span>
-                        <span>Status</span>
-                        <span></span>
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <button className="StateButton">Get Intro</button>
-                            <button className="StateButton">Pass</button>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <div className="StateText">
-                                Introduced
-                                <br />
-                                Jan 13, 2022
-                            </div>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <button className="StateButton">Get Intro</button>
-                            <button className="StateButton">Pass</button>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <div className="StateText">
-                                Introduced
-                                <br />
-                                Jan 13, 2022
-                            </div>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <button className="StateButton">Get Intro</button>
-                            <button className="StateButton">Pass</button>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <div className="StateText">
-                                Introduced
-                                <br />
-                                Jan 13, 2022
-                            </div>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <button className="StateButton">Get Intro</button>
-                            <button className="StateButton">Pass</button>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
-                    </div>
-                    <div className="ReviewListContent">
-                        <div className="RoleContent">
-                            <img src={favicon} alt="favicon" width="52px" height="52px" />
-                            <div className="Main">
-                                <span className="MainTitle">Front-end Engineer</span>
-                                <div className="detail">
-                                    <a href="/">you.com</a>
-                                    <div className="pos">
-                                        <GiPositionMarker />
-                                        <span>Remote</span>
-                                    </div>
-                                    <div className="job">
-                                        <MdWorkOutline />
-                                        <span>Full time</span>
-                                    </div>
-                                    <AiOutlineClockCircle className="clock_icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <a href="/">Amie Adams</a>
-                        </div>
-                        <div className="item">
-                            <a href="/">Nancy Xu</a>
-                        </div>
-                        <div className="RoleState">
-                            <div className="StateText">
-                                Introduced
-                                <br />
-                                Jan 13, 2022
-                            </div>
-                        </div>
-                        <img
-                            src={Message}
-                            className="message_image"
-                            width="44px"
-                            height="44px"
-                            alt="message"
-                        />
+                <div className="ReviewmainSharelink">
+                    <p>Share your link</p>
+                    <div className="ReviewmainSharelink_share">
+                        <input placeholder="https://moonhub.xyz/te/dkfie" />
+                        <div className="ReviewmainCopyBtn">Copy</div>
                     </div>
                 </div>
+                <div className="ReviewmainSharelink">
+                    <p>Invite through Email</p>
+                    <div className="ReviewmainSharelink_share">
+                        <input placeholder="eamil here" />
+                        <div className="ReviewmainCopyBtn">Invite</div>
+                    </div>
+                </div>
+                <div className="ReviewRefferal">Referral Rewards</div>
+                {
+                    [...new Array(4)].map((e, k) => <RewardsCard
+                        key='k'
+                        date="Jan 3, 2022"
+                        title="Annie Smith"
+                        email="asmith@gmail.com"
+                        rightText="Joined Moonhub through your referral."
+                        num="+5"
+                    />)
+                }
             </div>
+            <Footer />
         </div>
     );
 };

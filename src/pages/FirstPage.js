@@ -12,7 +12,7 @@ class FirstPage extends React.Component {
                 <div className="maindiv">
                     <div className="mainleft">
                         <img src="img/logo.png" alt="logo" />
-                        <div className="welcomeText"><span style={{ color: '#B9D7FF' }}>Welcome to</span> Connect.</div>
+                        <div className="welcomeText">Welcome to <span style={{ color: '#7adefd' }}>Moonhub</span></div>
                         <div className="SubText">
                             <p><BiRightArrowAlt className="rightIcon" />Grow your career</p>
                             <p><BiRightArrowAlt className="rightIcon" />Explore top startups</p>
@@ -40,7 +40,7 @@ class FirstPage extends React.Component {
                                     <input type="password" placeholder="e.g.:X AE A-12" />
                                 </div>
                             </div>
-                            <Link to="/choose"><div className="SignBtn">Sign Up</div></Link>
+                            <Link to="/intro"><div className="SignBtn">Sign Up</div></Link>
                             <div className="login">Already a memeber?
                                 <Link to='/home'>
                                     <p>Login here<BiRightArrowAlt /></p>

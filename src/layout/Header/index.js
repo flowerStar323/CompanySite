@@ -16,17 +16,13 @@ export default function Header() {
                         </Link>
                         <p>Moonhub</p>
                     </div>
-                    <Link to='/yourcompany'>
-                        <div className="CheaderItem">Companies</div>
-                    </Link>
+                    <div className="CheaderItem">Companies</div>
                     <Link to='/referrals'>
                         <div className="CheaderItem">Referrals</div>
                     </Link>
-                    <Link to='/members'>
-                        <div className="CheaderItem">Members</div>
-                    </Link>
                 </div>
                 <div className="CmainHeaderRight">
+                    <div className="CheadermatchBtn">Get Matched</div>
                     <GiTwoCoins className="CHeaderRightItemCoin" />
                     <RiMessage2Fill className="CHeaderRightItem" />
                     <FaUserCircle className="CHeaderRightItemUser" />
@@ -40,13 +36,13 @@ export default function Header() {
                     <Link to='/referrals'>
                         <div className="CheaderItemRes">Referrals</div>
                     </Link>
-                    <Link to='/members'>
-                        <div className="CheaderItemRes">Members</div>
-                    </Link>
                     <div className="CResItems">
                         <GiTwoCoins className="CResHeaderRightItemCoin" />
                         <RiMessage2Fill className="CResHeaderRightItem" />
                         <FaUserCircle className="CResHeaderRightItemUser" />
+                    </div>
+                    <div className="ResMatchOut">
+                        <div className="CheadermatchBtnRes">Get Matched</div>
                     </div>
                 </div>
             }

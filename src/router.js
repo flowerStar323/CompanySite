@@ -4,20 +4,15 @@ import { Switch, Route } from "react-router-dom";
 /****site route*****/
 //  Home page
 const Welcome = lazy(() => import("./pages/FirstPage"));
-const ChooseLevel = lazy(() => import("./pages/ChooseLevel"));
 const Intro = lazy(() => import("./pages/IntroSelf"));
-const IntroCompany = lazy(() => import("./pages/IntroCompany"));
 const AboutMe = lazy(() => import("./pages/AboutMe"));
-const AboutCompany = lazy(() => import("./pages/AboutCompany"));
 const Home = lazy(() => import("./pages/Home"));
 const PpartnerHome = lazy(() => import("./pages/PpartnerHome"));
-const YourCompany = lazy(() => import("./pages/YourCompany"));
 const ChattingPage = lazy(() => import("./pages/ChattingPage"));
-const ExploreMembers = lazy(() => import("./pages/ExploreMembers"));
-const YourPartners = lazy(() => import("./pages/YourPartners"));
 const Owner = lazy(() => import("./pages/Owner"));
-const Review = lazy(() => import("./pages/Review"));
 const Referrals = lazy(() => import("./pages/Referrals"));
+const Wallet = lazy(() => import("./pages/Wallet"));
+
 
 const AppRouter = () => {
   return (
@@ -25,19 +20,13 @@ const AppRouter = () => {
       <Switch>
         <Route exact path="/" component={Welcome} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/choose" component={ChooseLevel} />
         <Route exact path="/intro" component={Intro} />
-        <Route exact path="/introcompany" component={IntroCompany} />
         <Route exact path="/aboutme" component={AboutMe} />
-        <Route exact path="/aboutcompany" component={AboutCompany} />
         <Route exact path="/partner" component={PpartnerHome} />
-        <Route exact path="/yourcompany" component={YourCompany} />
         <Route exact path="/chatroom" component={ChattingPage} />
-        <Route exact path="/members" component={ExploreMembers} />
-        <Route exact path="/partners" component={YourPartners} />
         <Route exact path="/owner" component={Owner} />
-        <Route exact path="/review" component={Review} />
         <Route exact path="/referrals" component={Referrals} />
+        <Route exact path="/wallet" component={Wallet} />
       </Switch>
     </React.Fragment>
   );

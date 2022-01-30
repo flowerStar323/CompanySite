@@ -4,74 +4,40 @@
     width: 100%;
     margin-top: 100px;
     .OwnerTitle {
-        background: #000000;
+        background: linear-gradient(180deg, #000000 0%, #999999 103.27%);
         border-radius: 0px 0px 44px 44px;
         padding: 24px 0 61px 0;
         text-align: center;
-        height: 476px;
+        height: auto;
+        position: relative;
+        img {
+            margin-top: 50px;
+        }
 
         .OwnerSmallTitle {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-left: 60px;
-            font-family: "Montserrat", sans-serif;
+            font-family: Montserrat;
             font-style: normal;
             font-weight: bold;
-            font-size: 50px;
-            line-height: 61px;
+            font-size: 44px;
+            line-height: 54px;
+            margin-top: 51px;
             text-align: center;
-            color: white;
-            margin-bottom: 11.39px;
-            position: relative;
-            @media screen and (max-width: 1050px) {
-                display: flex;
-                flex-direction: column;
-                font-size: 40px;
-            }
+            color: #ffffff;
             .icon {
                 margin-top: -50px;
                 font-size: 33px;
                 margin-left: 10px;
             }
-            .resetButton {
-                background: #92baef;
-                border-radius: 11px;
-                border: none;
-                outline: none;
-                width: 253px;
-                height: 64px;
-                position: absolute;
-                right: 100px;
-                font-size: 24px;
-                color: black;
-                @media screen and (max-width: 1050px) {
-                    position: relative;
-                    align-self: center;
-                    font-size: 18px;
-                    width: 200px;
-                    height: 50px;
-                }
-            }
         }
         .OwnerSubTitle {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-left: 60px;
-            margin-top: 30px;
-            font-family: "Montserrat", sans-serif;
+            font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
-            font-size: 30px;
-            line-height: 37px;
+            font-size: 33px;
+            line-height: 40px;
             text-align: center;
-            color: white;
-            margin-bottom: 11.39px;
-            position: relative;
-            @media screen and (max-width: 1050px) {
-                font-size: 20px;
-            }
+            margin: 31px 0;
+            color: #ffffff;
             .icon {
                 margin-top: -20px;
                 font-size: 33px;
@@ -93,9 +59,6 @@
             text-align: center;
             margin-bottom: 11.39px;
             position: relative;
-            @media screen and (max-width: 1050px) {
-                font-size: 15px;
-            }
             .icon {
                 margin-top: -20px;
                 margin-left: 10px;
@@ -108,11 +71,12 @@
     }
     .OwnerContent {
         margin: auto;
-        max-width: 1380px;
+        max-width: 1336px;
         margin-top: 58px;
         display: flex;
         flex-direction: column;
         .YourPartner {
+            margin-bottom: 150px;
             .YourPartnerHeader {
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
@@ -120,15 +84,6 @@
                 font-size: 55px;
                 line-height: 67px;
                 text-align: center;
-                color: black;
-                @media screen and (max-width: 520px) {
-                    font-size: 45px;
-                }
-            }
-            .edit_icon {
-                display: inline-block;
-                float: right;
-                font-size: 33px;
                 color: black;
             }
             .YourPartnerContent {
@@ -139,10 +94,6 @@
                 line-height: 50px;
                 color: #000000;
                 margin: 80px 0;
-                @media screen and (max-width: 520px) {
-                    font-size: 18px;
-                    text-align: center;
-                }
             }
         }
         .OpenJobs {
@@ -156,19 +107,6 @@
                 text-align: center;
                 color: black;
                 margin-bottom: 69px;
-                @media screen and (max-width: 520px) {
-                    font-size: 40px;
-                }
-            }
-            .OpenJobsContent {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 22px;
-                @media screen and (max-width: 1075px) {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
             }
         }
         .add_job {
@@ -384,5 +322,94 @@
             cursor: pointer;
             color: #87a7f0 !important;
         }
+    }
+}
+.connectgroupPart {
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: right;
+        width: 450px;
+        color: #ffffff;
+    }
+    .connectbtnout {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        .resetButton {
+            background: #00a8dd;
+            border-radius: 11px;
+            border: none;
+            outline: none;
+            width: 253px;
+            height: 64px;
+            font-weight: bold;
+            right: 100px;
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
+.rolecardgroup {
+    display: flex;
+    max-width: 1336px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 1600px) {
+    .connectgroupPart {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        p {
+            text-align: center !important;
+        }
+    }
+    .connectbtnout {
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .YourPartnerContent {
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 1430px) {
+    .rolecardgroup {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-bottom: 0 !important;
+    }
+}
+@media screen and (max-width: 990px) {
+    .YourPartnerHeader {
+        font-size: 40px !important;
+    }
+    .YourPartnerContent {
+        line-height: 30px !important;
+    }
+}
+@media screen and (max-width: 460px) {
+    .connectgroupPart {
+        p {
+            width: 97% !important;
+        }
+    }
+    .YourPartnerHeader {
+        font-size: 40px !important;
+        line-height: 35px !important;
+    }
+    .OpenJobsHeader {
+        font-size: 40px !important;
     }
 }
