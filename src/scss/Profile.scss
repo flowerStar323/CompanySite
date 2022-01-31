@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300display=swap");
+.ProReviewContainer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ProReviewTitle {
+        background: linear-gradient(180deg, #000000 0%, #999999 103.27%);
+        border-radius: 0px 0px 44px 44px;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        width: 100%;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 61px;
+        position: relative;
+        text-align: center;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ProreviewTitleMain {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.Prophotoposition {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #fff;
+}
+.ProReviewTitle_left {
+    display: flex;
+}
+.ProphotoRight {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    .Profilename {
+        font-size: 35px;
+    }
+    .profilejob {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .profilelinkedin {
+        font-size: 25px;
+        color: #00a8dd;
+        margin-top: 10px;
+    }
+}
+.ProresetBtn {
+    width: 239px;
+    height: 60.12px;
+    background: #00a8dd;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    color: #ffffff;
+}
+.ProReviewmaindiv {
+    width: 1442px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+}
+.ProReviewmainTitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #061224;
+}
+.ProReviewmainsubtitle {
+    width: 1440px;
+    margin: 44px 0 10px 0;
+    .Proabouttitle {
+        display: flex;
+        width: 1150px;
+        justify-content: space-between;
+    }
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 30px;
+        line-height: 150%;
+        color: #000000;
+    }
+    .ProaboutText {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        width: 1200px;
+        color: #000000;
+    }
+}
+.ProReviewmainSharelink {
+    width: 1075px;
+    margin-top: 36px;
+    height: 244px;
+    background: #393939;
+    border-radius: 22px;
+    padding: 42.52px 0 0 80px;
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+    }
+    .ProReviewmainSharelink_share {
+        display: flex;
+        input {
+            width: 655px;
+            height: 73px;
+            background: #e2e2e2;
+            border-radius: 10px;
+            border-style: none;
+            padding: 0 15px;
+            font-size: 25px;
+            color: #000;
+        }
+        input:active,
+        input:focus {
+            outline: none;
+            border: 2px solid #00a8dd;
+        }
+    }
+    .ProReviewmainCopyBtn {
+        width: 210px;
+        height: 66.55px;
+        background: #00a8dd;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+}
+.ProReviewRefferal {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #061224;
+    margin: 106px 0 46px 0;
+}
+.ProresetBtnout {
+    display: flex;
+    align-items: flex-end;
+}
+.editbtn {
+    cursor: pointer;
+    color: #000;
+    margin-left: 30px;
+    font-size: 25px;
+}
+@media screen and (max-width: 1480px) {
+    .ProReviewmainsubtitle {
+        width: 97% !important;
+    }
+    .ProReviewmaindiv {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .ProaboutText {
+        width: 98% !important;
+        text-align: center !important;
+    }
+    .Proabouttitle {
+        width: 98% !important;
+    }
+    .ProReviewTitle {
+        height: auto !important;
+    }
+    .ProreviewTitleMain {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ProReviewTitle_left {
+        margin-top: 20px !important;
+    }
+    .ProresetBtnout {
+        margin: 30px !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .ProReviewmainSharelink {
+        width: 98% !important;
+        text-align: center !important;
+        height: auto !important;
+        padding-left: 0 !important ;
+    }
+    .ProReviewmainSharelink_share {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ProReviewmainCopyBtn {
+        margin: 20px 0 !important;
+    }
+}
+@media screen and (max-width: 860px) {
+    .ProReviewTitle_left {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ProphotoRight {
+        text-align: center !important;
+        margin-top: 20px;
+        margin-left: 0 !important;
+    }
+    .ProReviewmainsubtitle {
+        p {
+            text-align: center !important;
+        }
+    }
+    .ProReviewmainTitle {
+        font-size: 40px !important;
+    }
+    .ProReviewTitle {
+        font-size: 40px !important;
+    }
+    .ProReviewmainSharelink_share {
+        input {
+            width: 80% !important;
+        }
+    }
+    .ProReviewRefferal {
+        font-size: 40px !important;
+    }
+}

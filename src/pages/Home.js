@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../layout/Footer";
+import MatchModal from "../components/MatchModal";
 import "../scss/Home.scss";
 class FirstPage extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            visible: false
+        }
+    }
+    handleOk = () => {
+        this.setState({ visible: true });
+    }
+    handleCancel = () => {
+        this.setState({ visible: false });
+    }
     render() {
         return (
             <div className="Hroot">
@@ -18,7 +31,7 @@ class FirstPage extends React.Component {
                             <Link to='/'>
                                 <span>Sign In</span>
                             </Link>
-                            <div className="AccessBtn">Get Access</div>
+                            <div className="AccessBtn" onClick={() => this.handleOk()}>Get Access</div>
                         </div>
                     </div>
                     <div className="topDivOut">
@@ -74,6 +87,7 @@ class FirstPage extends React.Component {
                     </div>
                     <Footer />
                 </div>
+                <MatchModal visible={this.state.visible} handleCancel={this.handleCancel} />
             </div>
         )
     }

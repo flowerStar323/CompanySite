@@ -44,7 +44,7 @@ const Referrals = () => {
                 <div className="ReviewmainSharelink">
                     <p>Invite through Email</p>
                     <div className="ReviewmainSharelink_share">
-                        <input placeholder="eamil here" />
+                        <input placeholder="email here" />
                         <div className="ReviewmainCopyBtn">Invite</div>
                     </div>
                 </div>

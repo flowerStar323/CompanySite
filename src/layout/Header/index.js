@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MatchModal from "../../components/MatchModal";
 import "./header.css";
 import { RiMessage2Fill } from "react-icons/ri";
 import { FaUserCircle, FaBars } from "react-icons/fa";
 import { GiTwoCoins } from "react-icons/gi";
 export default function Header() {
     const [Resflag, setResflag] = useState(false);
+    const [visible, setVisible] = useState(false);
+    const handleOk = () => {
+        setVisible(true);
+    }
+    const handleCancel = () => {
+        setVisible(false);
+    }
     return (
         <div className="CComHeader">
+            <MatchModal visible={visible} handleCancel={() => handleCancel()} />
             <div className="CmainHeader">
                 <div className="CmainHeaderLeft">
                     <div className="CHeaderlogo">
@@ -16,33 +25,48 @@ export default function Header() {
                         </Link>
                         <p>Moonhub</p>
                     </div>
-                    <div className="CheaderItem">Companies</div>
+                    <Link to='/partner'>
+                        <div className="CheaderItem">Companies</div>
+                    </Link>
                     <Link to='/referrals'>
                         <div className="CheaderItem">Referrals</div>
                     </Link>
                 </div>
                 <div className="CmainHeaderRight">
-                    <div className="CheadermatchBtn">Get Matched</div>
-                    <GiTwoCoins className="CHeaderRightItemCoin" />
-                    <RiMessage2Fill className="CHeaderRightItem" />
-                    <FaUserCircle className="CHeaderRightItemUser" />
+                    <div className="CheadermatchBtn" onClick={() => handleOk()}>Get Matched</div>
+                    <Link to='/wallet'>
+                        <GiTwoCoins className="CHeaderRightItemCoin" />
+                    </Link>
+                    <Link to='/chatroom'>
+                        <RiMessage2Fill className="CHeaderRightItem" />
+                    </Link>
+                    <Link to='/profile'>
+                        <FaUserCircle className="CHeaderRightItemUser" />
+                    </Link>
                     <FaBars className="CResHeaderRightItemBar" onClick={() => setResflag(!Resflag)} />
                 </div>
-
             </div>
             {
                 Resflag && <div className="CResPanel">
-                    <div className="CheaderItemRes">Companies</div>
+                    <Link to="/partner">
+                        <div className="CheaderItemRes">Companies</div>
+                    </Link>
                     <Link to='/referrals'>
                         <div className="CheaderItemRes">Referrals</div>
                     </Link>
                     <div className="CResItems">
-                        <GiTwoCoins className="CResHeaderRightItemCoin" />
-                        <RiMessage2Fill className="CResHeaderRightItem" />
-                        <FaUserCircle className="CResHeaderRightItemUser" />
+                        <Link to='/wallet'>
+                            <GiTwoCoins className="CResHeaderRightItemCoin" />
+                        </Link>
+                        <Link to='/chatroom'>
+                            <RiMessage2Fill className="CResHeaderRightItem" />
+                        </Link>
+                        <Link to='/profile'>
+                            <FaUserCircle className="CResHeaderRightItemUser" />
+                        </Link>
                     </div>
                     <div className="ResMatchOut">
-                        <div className="CheadermatchBtnRes">Get Matched</div>
+                        <div className="CheadermatchBtnRes" onClick={() => handleOk()}>Get Matched</div>
                     </div>
                 </div>
             }

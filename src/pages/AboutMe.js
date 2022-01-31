@@ -10,9 +10,9 @@ class ChoosePage extends React.Component {
                     <div className="ABackBtnOut" onClick={() => { window.location.href = '/intro' }}>
                         <FaChevronLeft className="ABackBtn" />
                     </div>
-                    <div className="AANextBtnOut">
+                    {/* <div className="AANextBtnOut">
                         <FaChevronRight className="AANextBtn" />
-                    </div>
+                    </div> */}
                     <div className="ACtitle">Tell us about you</div>
                     <div className="Adetail">
                         <div className="AdetailTitle">About Me</div>
@@ -21,9 +21,11 @@ class ChoosePage extends React.Component {
                         </div>
                         <textarea className="textarea" />
                         <div className="ANextBtnOut">
-                            <div className="ANextBtn">
-                                Join
-                            </div>
+                            <Link to='/home'>
+                                <div className="ANextBtn">
+                                    Join
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
