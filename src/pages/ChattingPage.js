@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BiSearch } from "react-icons/bi";
 import Header from "../layout/Header";
-import { FaChevronLeft, FaSmile } from "react-icons/fa";
+import { FaSmile } from "react-icons/fa";
 import { RiSettings3Fill } from "react-icons/ri";
 import { MdAttachFile } from "react-icons/md";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { GiPositionMarker } from "react-icons/gi";
-import { MdWorkOutline } from "react-icons/md";
-import favicon from "../assets/images/favicon.png";
-import card_mark from "../assets/images/card_mark.png";
+import Footer from "../layout/Footer";
 import "../scss/ChattingPage.css";
+import { Link } from "react-router-dom";
 export default function ChattingPage() {
     const [chattext, setChattext] = useState('');
     const addattachfile = () => {
@@ -54,42 +51,21 @@ export default function ChattingPage() {
                 </div>
                 <div className="mainwindow" id="mainwindow">
                     <div className="UserNamePart">
-                        <p className="displayname">Muhammad Maroof</p>
+                        <Link to='/profile'>
+                            <p className="displayname">Muhammad Maroof</p>
+                        </Link>
                         <div className="historyinput">
                             <BiSearch className="chathistorySearch" /><input placeholder="Search this conversation" />
                         </div>
                     </div>
                     <div className="chattitle">
-                        <div className="displaytitle">View Referral</div>
+                        {/* <div className="displaytitle">View Referral</div> */}
                         {/* ----------------------------------------------------------------------- */}
-                        <div className="PHPayJobcardContainer">
-                            <div className="PHPayJobcardHeader">
-                                <div className="PHPayTitle">
-                                    <img src={favicon} alt="favicon" width="52px" height="52px" />
-                                    <div className="PHPayMain">
-                                        <span className="PHPayMainTitle">Front-end Engineer</span>
-                                        <div className="PHPaydetail">
-                                            <div className="PHPayyoudotcom">you.com</div>
-                                            <div className="PHPaypos">
-                                                <GiPositionMarker />
-                                                <span>Remote</span>
-                                            </div>
-                                            <div className="PHPayjob">
-                                                <MdWorkOutline />
-                                                <span>Full time</span>
-                                            </div>
-                                            <AiOutlineClockCircle className="PHPayclock_icon" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="PHPayPrice">
-                                    <div className="PHPaySubprice">
-                                        <div className="PHPayvalue">100</div>
-                                        <img src={card_mark} alt="card_mark" width="42px" height="33px" />
-                                    </div>
-                                </div>
+                        <Link to='/owner'>
+                            <div className="displayrealtitle">
+                                Moonhub Expert Conversation About <img src="img/cardlogo_you.png" height={37} width={37} />
                             </div>
-                        </div>
+                        </Link>
                         {/* ------------------------------------------------------------ */}
                     </div>
                     display chat history
@@ -106,6 +82,7 @@ export default function ChattingPage() {
                     </div>
                 </div>
             </div>
+            {/* <Footer /> */}
         </div>
     );
 }

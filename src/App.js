@@ -6,11 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <React.Fragment>
-      <Suspense fallback={null}>
-        <AppRouter />
-      </Suspense>
-    </React.Fragment>
+    <AppRouter />
   );
 }
 

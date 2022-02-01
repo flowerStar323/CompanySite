@@ -1,23 +1,23 @@
-.maindiv {
+.SSmaindiv {
     width: 1140px;
     height: 683px;
     border-radius: 14px;
     display: flex;
     overflow: hidden;
 }
-.mainleft {
+.SSmainleft {
     width: 60%;
     background: linear-gradient(348.44deg, #000000 24.77%, #fefefe 101.26%);
     padding-left: 70px;
     padding-top: 104px;
     color: white;
 }
-.mainright {
+.SSmainright {
     width: 40%;
     background: linear-gradient(348.44deg, #000000 24.77%, #51b7d6 101.26%);
     position: relative;
 }
-.welcomeText {
+.SSwelcomeText {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -26,7 +26,7 @@
     line-height: 58px;
     width: 287px;
 }
-.SubText {
+.SSSubText {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -37,20 +37,20 @@
         margin: 5px 0 0 0;
         color: white;
     }
-    .rightIcon {
+    .SSrightIcon {
         font-weight: bold;
         font-size: 30px;
         margin-right: 5px;
     }
 }
-.closeIcon {
+.SScloseIcon {
     font-size: 30px;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-.joinCommunity {
+.SSjoinCommunity {
     width: 515px;
     height: 591.5px;
     border-radius: 10px;
@@ -69,7 +69,7 @@
         color: #818181;
     }
 }
-.title {
+.SStitle {
     font-family: SansBold;
     font-style: normal;
     font-weight: 900;
@@ -84,7 +84,7 @@ p {
     font-family: SansBold;
     margin: 0;
 }
-.firstpageInput {
+.signUpInput {
     border: 1px solid #dddddd;
     background-color: transparent;
     width: 100%;
@@ -93,23 +93,33 @@ p {
     padding-left: 45px;
     font-size: 17px;
 }
-.firstpageInput:focus,
-.firstpageInput:active {
+.SSreferralcode {
+    padding-left: 20px;
+    border: 1px solid #dddddd;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+input:focus,
+input:active {
     outline: none !important;
     border: 2px solid #77a0d9;
 }
-.emailinput {
+.SSemailinput {
     display: flex;
     align-items: center;
 }
-.emailIcon {
+.SSemailIcon {
     font-size: 22px;
     color: #99989e;
     position: absolute;
     margin-left: 15px;
 }
-.emailPart {
-    margin-top: 30px;
+.SSemailPart {
+    margin-top: 15px;
     p {
         font-family: inter;
         font-style: normal;
@@ -122,7 +132,7 @@ p {
         margin-bottom: 10px;
     }
 }
-.SignBtn {
+.SSSignBtn {
     width: 100%;
     height: 60px;
     display: flex;
@@ -130,12 +140,13 @@ p {
     align-items: center;
     background-color: #3183ff;
     border-radius: 30px;
-    margin-top: 60px;
+    cursor: pointer;
+    margin-top: 20px;
     font-size: 20px;
     color: white;
 }
-.login {
-    margin-top: 20px;
+.SSlogin {
+    margin-top: 10px;
     display: flex;
     font-family: inter;
     font-style: normal;
@@ -152,35 +163,35 @@ p {
         font-weight: normal;
     }
 }
-@media screen and (max-width: 1180px) {
-    .maindiv {
+@media screen and (max-width: 1170px) {
+    .SSmaindiv {
         width: 100% !important;
     }
-    .mainleft {
+    .SSmainleft {
         display: none !important;
     }
-    .closeIcon {
+    .SScloseIcon {
         display: none !important;
     }
-    .mainright {
+    .SSmainright {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
     }
-    .joinCommunity {
+    .SSjoinCommunity {
         top: 0 !important;
         right: 0 !important;
         position: relative !important;
     }
 }
 @media screen and (max-width: 530px) {
-    .joinCommunity {
+    .SSjoinCommunity {
         width: 97% !important;
     }
 }
 @media screen and (max-width: 465px) {
-    .joinCommunity {
+    .SSjoinCommunity {
         height: auto !important;
         padding-bottom: 30px !important;
         padding-left: 10px !important;
@@ -189,7 +200,7 @@ p {
             text-align: center !important;
         }
     }
-    .title {
+    .SStitle {
         line-height: 35px !important;
         text-align: center !important;
     }

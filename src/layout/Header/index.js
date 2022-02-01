@@ -16,17 +16,22 @@ export default function Header() {
     }
     return (
         <div className="CComHeader">
-            <MatchModal visible={visible} handleCancel={() => handleCancel()} />
+            <MatchModal
+                visible={visible}
+                handleCancel={() => handleCancel()}
+                title="Let Moonhub Experts match you with startups!"
+                subtitle="Tell us about the type of roles you’re interested in, stage / sector of company, criteria, and your timeline. Someone from our team of startup experts will reply in <24 hours!"
+            />
             <div className="CmainHeader">
                 <div className="CmainHeaderLeft">
-                    <div className="CHeaderlogo">
-                        <Link to='/home'>
-                            <img src="img/homelogo.png" width={40} className="Chomelogo" />
-                        </Link>
-                        <p>Moonhub</p>
-                    </div>
+                    <Link to='/'>
+                        <div className="CHeaderlogo">
+                            <img src="img/homelogo.png" width={35} className="Chomelogo" />
+                            <p>Moonhub</p>
+                        </div>
+                    </Link>
                     <Link to='/partner'>
-                        <div className="CheaderItem">Companies</div>
+                        <div className="CheaderItem logomargin">Companies</div>
                     </Link>
                     <Link to='/referrals'>
                         <div className="CheaderItem">Referrals</div>

@@ -11,9 +11,13 @@
     top: 0;
 }
 
+.logomargin {
+    margin-left: 70px !important;
+}
+
 .CheadermatchBtn, .CheadermatchBtnRes {
-    width: 192px;
-    height: 51px;
+    width: 140px;
+    height: 45px;
     font-family: Sans;
     font-style: normal;
     font-weight: bold;
@@ -56,6 +60,7 @@
 .CHeaderlogo>p {
     margin: 0;
     font-weight: bolder;
+    color: #fff;
 }
 
 .Chomelogo {

@@ -6,7 +6,7 @@
     .OwnerTitle {
         background: linear-gradient(180deg, #000000 0%, #999999 103.27%);
         border-radius: 0px 0px 44px 44px;
-        padding: 24px 0 61px 0;
+        padding: 24px 0 31px 0;
         text-align: center;
         height: auto;
         position: relative;
@@ -31,12 +31,12 @@
         }
         .OwnerSubTitle {
             font-family: Montserrat;
-            font-style: normal;
+            font-style: italic;
             font-weight: normal;
             font-size: 33px;
             line-height: 40px;
             text-align: center;
-            margin: 31px 0;
+            margin: 10px 0;
             color: #ffffff;
             .icon {
                 margin-top: -20px;
@@ -84,7 +84,7 @@
                 font-size: 55px;
                 line-height: 67px;
                 text-align: center;
-                color: black;
+                color: #00a8dd;
             }
             .YourPartnerContent {
                 font-family: "Open Sans", sans-serif;
@@ -105,7 +105,7 @@
                 font-size: 55px;
                 line-height: 67px;
                 text-align: center;
-                color: black;
+                color: #00a8dd;
                 margin-bottom: 69px;
             }
         }
@@ -341,6 +341,7 @@
     .connectbtnout {
         width: 100%;
         display: flex;
+        margin-top: 20px;
         position: relative;
         justify-content: flex-end;
         .resetButton {

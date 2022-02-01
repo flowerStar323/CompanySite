@@ -1,16 +1,15 @@
 import React from "react";
 import { Modal } from "antd";
 import "./matchmodal.scss";
-const MatchModal = ({ visible, handleCancel }) => {
+const MatchModal = ({ visible, handleCancel, title, subtitle }) => {
     return (
-        <Modal visible={visible} footer={false} onCancel={handleCancel}>
+        <Modal width={1200} visible={visible} footer={false} onCancel={handleCancel}>
             <div className="antd_Modal" >
                 <div className="accessModalTitle">
-                    Want to  explore high-growth startup opportunities?
-                    <span> Let moonhub Experts introduce you!</span>
+                    {title}
                 </div>
                 <div className="accessModalsubtitle">
-                    Tell us a bit about the type of roles you’re interested in, stage / sector of company, import criteria, and your timeline. Our team of startup experts will get back to you with matches to startups + opportunities for warm introductions.
+                    {subtitle}
                 </div>
                 <textarea placeholder="Notes here" className="antdModalTextarea" />
                 <div className="ChatBtnOut">

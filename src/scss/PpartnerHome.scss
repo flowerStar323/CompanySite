@@ -13,7 +13,7 @@
     border-radius: 0 0 30px 30px;
     color: #fff;
     margin-top: 100px;
-    font-family: Montserrat;
+    font-family: Roboto;
     font-style: normal;
     font-weight: bolder;
     font-size: 50px;
@@ -44,17 +44,17 @@
     input {
         border: 1px solid #eaeaea;
         height: 50px;
-        width: 200px;
+        width: 300px;
         border-radius: 10px;
         padding: 0 10px;
         font-size: 20px;
         color: #000;
         transition: all 0.3s;
+        border: 2px solid #00a8dd;
     }
     input:focus,
     input:active {
         outline: none !important;
-        border: 2px solid #00a8dd;
     }
 }
 .ExpsearchIcon {

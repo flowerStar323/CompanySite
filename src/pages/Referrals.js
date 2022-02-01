@@ -48,7 +48,14 @@ const Referrals = () => {
                         <div className="ReviewmainCopyBtn">Invite</div>
                     </div>
                 </div>
-                <div className="ReviewRefferal">Referral Rewards</div>
+                <div className="ReviewmainSharelink">
+                    <p>Share Your Referral Code</p>
+                    <div className="ReviewmainSharelink_share">
+                        <input placeholder="Xyek143A" />
+                        <div className="ReviewmainCopyBtn">Copy</div>
+                    </div>
+                </div>
+                <div className="ReviewRefferal">Referral Activity</div>
                 {
                     [...new Array(4)].map((e, k) => <RewardsCard
                         key='k'

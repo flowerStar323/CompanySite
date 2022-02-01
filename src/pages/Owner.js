@@ -4,6 +4,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Jobcard from "../components/JobCard/Jobcard";
+import MatchModal from "../components/MatchModal";
 import "../scss/Owner.scss";
 import You from "../assets/images/you.png";
 import AvatarImage from "../assets/images/avatar_image.png";
@@ -18,6 +19,11 @@ const Owner = () => {
     const [initNote, setInitNote] = useState("");
     const [showPasswordModal, setShowPasswordModal] = useState(false);
     const [showAddModal, setShowAddModal] = useState(false);
+    const [visible, setVisible] = useState(false);
+
+    const handleCancel = () => {
+        setVisible(false);
+    }
     return (
         <div className="OwnerContainer">
             <Header />
@@ -38,7 +44,7 @@ const Owner = () => {
                     <div className="connectbtnout">
                         <button
                             className="resetButton"
-                        // onClick={() => setShowPasswordModal(!showPasswordModal)}
+                            onClick={() => setVisible(true)}
                         >
                             CONNECT
                         </button>
@@ -182,7 +188,12 @@ const Owner = () => {
                     ></div>
                 </>
             )}
-
+            <MatchModal
+                width={1200}
+                visible={visible}
+                handleCancel={() => handleCancel()}
+                title="Connect with an expert about opportunities at You.com"
+                subtitle="Ready for a warm intro or here to learn more? Tell Moonhub’s Experts what you’re looking for and start chatting (or get intro’d!) in <24 hours." />
         </div>
     );
 };

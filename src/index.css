@@ -31,3 +31,15 @@ a {
     color: #fff !important;
     text-decoration: none !important;
 }
+
+.ant-modal-content {
+    border-radius: 20px !important;
+}
+
+.ant-modal-header {
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.ant-modal-wrap {
+    background: #6B6B6BCC;
+}

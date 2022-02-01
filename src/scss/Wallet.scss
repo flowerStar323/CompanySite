@@ -113,15 +113,39 @@
         margin-left: 50px;
     }
 }
+.ReviewRoadmoreBtnOut {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.ReviewRoadmoreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 239px;
+    height: 73px;
+    background: #ffffff;
+    border: 2px solid #868686;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #00a8dd;
+}
 .ReviewRefferal {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bolder;
     font-size: 35px;
     line-height: 49px;
-    width: 1245px;
+    width: 1350px;
     margin-bottom: 40px;
-    color: #000000;
+    color: #00a8dd;
 }
 .withdrawBtn {
     width: 241px;
@@ -176,7 +200,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1350px) {
     .RecentItemContainer {
         flex-direction: column !important;
     }

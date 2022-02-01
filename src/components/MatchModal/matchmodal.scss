@@ -3,9 +3,7 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center;
-}
-.ant-modal {
-    width: 1200px !important;
+    padding: 24px;
 }
 .accessModalTitle {
     font-family: Montserrat;
@@ -15,13 +13,7 @@
     margin-top: 50px;
     line-height: 71px;
     text-align: center;
-    width: 790px;
-    color: #000000;
-    span {
-        color: #00a8dd;
-        line-height: 30px;
-        font-size: 34px;
-    }
+    color: #00a8dd;
 }
 .accessModalsubtitle {
     font-family: Sans;

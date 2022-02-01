@@ -1,37 +1,70 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Modal } from "antd";
 import Footer from "../layout/Footer";
+import JoinNow from "./FirstPage";
+import IntroSelf from "./IntroSelf";
+import AboutMe from "./AboutMe";
+import SignUp from "./SignUp";
+import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import MatchModal from "../components/MatchModal";
 import "../scss/Home.scss";
+import { FaSignInAlt } from "react-icons/fa";
 class FirstPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            visible: false
+            visible: false,
+            joinvisible: false,
+            selfvisible: false,
+            aboutvisible: false,
+            signvisible: false,
         }
     }
     handleOk = () => {
         this.setState({ visible: true });
     }
     handleCancel = () => {
-        this.setState({ visible: false });
+        this.setState({
+            visible: false,
+            joinvisible: false,
+            selfvisible: false,
+            aboutvisible: false,
+            signvisible: false,
+        });
+    }
+    SignInFunc = () => {
+        this.setState({ joinvisible: false, signvisible: true });
+    }
+    selfFunc = () => {
+        this.setState({ selfvisible: false, aboutvisible: true });
+    }
+    toJoinnowfunc = () => {
+        this.setState({ selfvisible: false, signvisible: true });
+    }
+    tointrofunc = () => {
+        this.setState({ aboutvisible: false, selfvisible: true });
+    }
+    tologinfunc = () => {
+        this.setState({ signvisible: false, joinvisible: true });
+    }
+    togofunc = () => {
+        this.setState({ signvisible: false, selfvisible: true });
     }
     render() {
         return (
             <div className="Hroot">
                 <div className="Hmaindiv">
                     <div className="header">
-                        <div className="headerleft">
-                            <Link to='/home'>
-                                <img src="img/homelogo.png" width={50} className="homelogo" />
-                            </Link>
-                            <p>Moonhub</p>
-                        </div>
+                        <Link to='/'>
+                            <div className="headerleft">
+                                <img src="img/homelogo.png" width={30} className="homelogo" />
+                                <p>Moonhub</p>
+                            </div>
+                        </Link>
                         <div className="headerright">
-                            <Link to='/'>
-                                <span>Sign In</span>
-                            </Link>
-                            <div className="AccessBtn" onClick={() => this.handleOk()}>Get Access</div>
+                            <span onClick={() => this.setState({ joinvisible: true })}>Sign In</span>
+                            <div className="AccessBtn" onClick={() => this.SignInFunc()}>Get Access</div>
                         </div>
                     </div>
                     <div className="topDivOut">
@@ -39,19 +72,26 @@ class FirstPage extends React.Component {
                             Join the New Era of Startups and Top Talent.
                         </div>
                         <div className="homesubtitle">
-                            Moonhub brings together to world’s best talent and fastest growing startups. Earn rewards for career exploration & $10,000+ for successful referrals.
+                            Moonhub brings together to world’s best talent and fastest growing startups.
+                            Earn <img src="img/homelogo.png" width={30} /> for growing the community. <img src="img/homelogo.png" width={30} /> pay you $ every time anyone finds a job on Moonhub.
                         </div>
                         <div className="joinText">
-                            Earn 5&nbsp;&nbsp;<img src="img/homelogo.png" width={40} />&nbsp; when you join.
+                            Earn 5&nbsp;&nbsp;<img src="img/homelogo.png" width={30} />&nbsp; when you join.
                         </div>
-                        <div className="joinBtn">
+                        <div className="joinBtn" onClick={() => this.SignInFunc()}>
                             Join Moonhub
                         </div>
                     </div>
                     <div className="bottomDivOut">
                         <div className="bottomDiv">
                             <div className="bottomtitle">
-                                Discover moonshots with Moonhub.
+                                <div className="bottomtitle_left">
+                                    Discover moonshots with Moonhub.
+                                </div>
+                                <div className="bottomtitle_right">
+                                    <BiLeftArrow className="bottomtitle_right_slide_icon" />
+                                    <BiRightArrow className="bottomtitle_right_slide_icon" />
+                                </div>
                             </div>
                             <div className="verkada">
                                 <img src="img/homebottomlogo.png" width={170} />
@@ -87,7 +127,18 @@ class FirstPage extends React.Component {
                     </div>
                     <Footer />
                 </div>
-                <MatchModal visible={this.state.visible} handleCancel={this.handleCancel} />
+                <Modal footer={false} width={1140} visible={this.state.joinvisible} onCancel={() => this.handleCancel()}>
+                    <JoinNow func={this.SignInFunc} />
+                </Modal>
+                <Modal footer={false} width={1140} visible={this.state.selfvisible} onCancel={() => this.handleCancel()}>
+                    <IntroSelf funcback={this.toJoinnowfunc} funcup={this.selfFunc} />
+                </Modal>
+                <Modal footer={false} width={1140} visible={this.state.aboutvisible} onCancel={() => this.handleCancel()}>
+                    <AboutMe func={this.tointrofunc} />
+                </Modal>
+                <Modal footer={false} width={1140} visible={this.state.signvisible} onCancel={() => this.handleCancel()}>
+                    <SignUp func={this.tologinfunc} funcintro={this.togofunc} />
+                </Modal>
             </div>
         )
     }

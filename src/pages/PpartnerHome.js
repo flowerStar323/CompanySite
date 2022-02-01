@@ -16,13 +16,13 @@ export default function PpartnerHome() {
                     <div className="ExpGroupTitle">
                         <div className="ExpGroupTitleLeft" />
                         <div className="ExpGroupTitleRight">
-                            <input />
+                            <input placeholder="e.g. Elon Corp" />
                             <BiSearch className="ExpsearchIcon" />
                         </div>
                     </div>
                     {[...new Array(10)].map((e, k) => <div className="ExpCardRow" key={k}>
                         <div className="ExpcardTwo">
-                            <Card logo='img/codelogo.png' title='Verkada' subtitle='32 roles' />
+                            <Card logo='img/codelogo.png' title='Verkada' subtitle='10 roles' />
                             <Card logo='img/codelogo.png' title='Verkada' subtitle='10 roles' />
                         </div>
                         <div className="ExpcardTwo">
