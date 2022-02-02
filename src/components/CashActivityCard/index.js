@@ -8,7 +8,7 @@ export default function index({ key, date, title, email, rightText, num }) {
                 <div className="RRRewardsCard_Row_right">
                     {rightText}
                 </div>
-                <img src="img/arrowrightthree.png" style={{ margin: '0 53px' }} />
+                <img src="img/arrowrightthree.png" width={100} style={{ margin: '0 40px' }} />
                 <div className="RRRewardsCard_Row_right_right">
                     <div className="RRRewardsCard_Row_right_in">
                         $0.12/

@@ -66,7 +66,9 @@ class SignUp extends React.Component {
                                 <input type="text" name="code" onChange={(e) => this.handleChange(e)} value={code} className="SSreferralcode" placeholder="des..." />
                             </div>
                         </div>
-                        <div className="SSSignBtn" onClick={() => this.Setemail_pass()}>Join Now</div>
+                        <div className="SSSignBtnOut">
+                            <div className="SSSignBtn" onClick={() => this.Setemail_pass()}>Join Now</div>
+                        </div>
                         <div className="SSlogin">Already a memeber?
                             <p onClick={() => this.props.func()} style={{ cursor: "pointer" }}>Login here<BiRightArrowAlt /></p>
                         </div>

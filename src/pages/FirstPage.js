@@ -55,9 +55,11 @@ class FirstPage extends React.Component {
                                 <input type="password" name="password" onChange={(e) => this.handleChange(e)} className="firstpageInput" placeholder="e.g.:X AE A-12" />
                             </div>
                         </div>
-                        <div className="SignBtn" onClick={() => this.Login()}>Login</div>
+                        <div className="SignBtnOut">
+                            <div className="SignBtn" onClick={() => this.Login()}>Login</div>
+                        </div>
                         <div className="login">Already a memeber?
-                            <p onClick={() => this.props.func()} style={{ cursor: "pointer" }}>Sign up here<BiRightArrowAlt /></p>
+                            <p onClick={() => this.props.func()} style={{ cursor: "pointer" }}>Signup here<BiRightArrowAlt /></p>
                         </div>
                     </div>
                 </div>

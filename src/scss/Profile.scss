@@ -67,7 +67,7 @@
     .oldpassinput {
         width: 100%;
         border: 1px solid #00a8dd;
-        height: 50px;
+        height: 40px;
         padding: 0 10px;
         border-radius: 10px;
     }
@@ -116,6 +116,7 @@
     .profilelinkedin {
         font-size: 25px;
         color: #00a8dd;
+        font-style: italic;
         margin-top: 10px;
     }
 }
@@ -125,14 +126,14 @@
     font-weight: bolder;
 }
 .ProresetBtn {
-    width: 200px;
+    width: 170px;
     height: 50px;
     background: grey;
     border-radius: 7px;
     font-family: Montserrat;
     font-style: normal;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +144,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 54px;
 }
 .ProReviewmainTitle {
     font-family: Montserrat;
@@ -152,11 +152,15 @@
     font-size: 50px;
     line-height: 61px;
     text-align: center;
-
     color: #061224;
 }
+.ProReviewRefferalOut {
+    display: flex;
+    justify-content: left;
+    width: 1150px;
+}
 .ProReviewmainsubtitle {
-    width: 1440px;
+    width: 1150px;
     margin: 44px 0 10px 0;
     .Proabouttitle {
         display: flex;
@@ -167,17 +171,17 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 35px;
         line-height: 150%;
-        color: #000000;
+        color: #00a8dd;
     }
     .ProaboutText {
         font-family: Montserrat;
         font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 34px;
-        width: 1200px;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: bolder;
+        width: 1170px;
         color: #000000;
     }
 }
@@ -242,11 +246,11 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 35px;
+    line-height: 60px;
     text-align: center;
     color: #00a8dd;
-    margin: 106px 0 46px 0;
+    margin: 80px 0 20px 0;
 }
 .ProresetBtnout {
     display: flex;
@@ -270,6 +274,9 @@
     .ProaboutText {
         width: 98% !important;
         text-align: center !important;
+    }
+    .ProReviewRefferalOut {
+        width: 98% !important;
     }
     .Proabouttitle {
         width: 98% !important;
@@ -339,6 +346,7 @@
         }
     }
     .ProReviewRefferal {
-        font-size: 40px !important;
+        font-size: 35px !important;
+        line-height: 40px !important;
     }
 }

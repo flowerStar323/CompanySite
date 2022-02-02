@@ -122,8 +122,13 @@ p {
         margin-bottom: 10px;
     }
 }
-.SignBtn {
+.SignBtnOut {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.SignBtn {
+    width: 200px;
     height: 60px;
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiEdit } from "react-icons/fi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { BiSearch } from "react-icons/bi";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Jobcard from "../components/JobCard/Jobcard";
@@ -28,7 +29,7 @@ const Owner = () => {
         <div className="OwnerContainer">
             <Header />
             <div className="OwnerTitle">
-                <img src={You} alt="you" width="180px" height="180px" />
+                <img src={You} alt="you" width="150px" height="150px" />
                 <div className="OwnerSmallTitle">
                     <div>
                         <span>You</span>
@@ -39,7 +40,7 @@ const Owner = () => {
                 </div>
                 <div className="connectgroupPart">
                     <p>
-                        Talk with a Moonhub Expert to learn more about opportunities at You & get a warm intro.
+                        Talk with a Moonhub Expert <span>to</span> learn more <span>about opportunities at You &</span> get a warm intro.
                     </p>
                     <div className="connectbtnout">
                         <button
@@ -62,6 +63,12 @@ const Owner = () => {
                 </div>
                 <div className="OpenJobs">
                     <div className="OpenJobsHeader">Open Roles</div>
+                    <div className="roleSearchInputOut">
+                        <div className="ExpGroupTitleRight">
+                            <input placeholder="e.g. Elon Corp" />
+                            <BiSearch className="ExpsearchIcon" />
+                        </div>
+                    </div>
                     <div className="OpenJobsContent">
                         {[...new Array(8)].map((e, k) => <div className="rolecardgroup">
                             <Jobcard />

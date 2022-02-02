@@ -14,10 +14,10 @@
         font-style: normal;
         width: 100%;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 61px;
         text-align: center;
-        height: 350px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -30,31 +30,35 @@
     align-items: center;
     margin-top: 54px;
 }
+.ReviewmainTitleOut {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
 .ReviewmainTitle {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 61px;
     text-align: center;
-
-    color: #061224;
+    color: #00a8dd;
 }
 .Reviewmainsubtitle {
     width: 1440px;
-    margin: 44px 0 10px 30px;
+    margin: 25px 0 10px 30px;
     p {
         font-family: Sans;
         font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
+        font-weight: bolder;
+        font-size: 25px;
         line-height: 150%;
         color: #000000;
     }
     li {
         font-family: Sans;
         font-style: normal;
-        font-size: 25px;
+        font-size: 22px;
         line-height: 150%;
         color: #000000;
         span {
@@ -63,18 +67,23 @@
         }
     }
 }
+.ReviewRefferalOut {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
 .ReviewmainSharelink {
-    width: 910px;
+    width: 675px;
     margin-top: 36px;
-    height: 190px;
+    height: 160px;
     background: #393939;
     border-radius: 22px;
-    padding: 25px 0 0 45px;
+    padding: 20px 0 0 30px;
     p {
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 37px;
         letter-spacing: -0.03em;
         color: #ffffff;
@@ -82,8 +91,8 @@
     .ReviewmainSharelink_share {
         display: flex;
         input {
-            width: 655px;
-            height: 73px;
+            width: 500px;
+            height: 60px;
             background: #e2e2e2;
             border-radius: 10px;
             border-style: none;
@@ -98,8 +107,8 @@
         }
     }
     .ReviewmainCopyBtn {
-        width: 120px;
-        height: 66.55px;
+        width: 100px;
+        height: 60px;
         background: #00a8dd;
         border-radius: 10px;
         display: flex;
@@ -109,19 +118,19 @@
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
-        margin-left: 50px;
+        font-size: 25px;
+        margin-left: 20px;
     }
 }
 .ReviewRefferal {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 61px;
     text-align: center;
     color: #00a8dd;
-    margin: 106px 0 46px 0;
+    margin: 100px 0 46px 20px;
 }
 @media screen and (max-width: 1480px) {
     .Reviewmainsubtitle {
@@ -153,10 +162,11 @@
         }
     }
     .ReviewmainTitle {
-        font-size: 40px !important;
+        font-size: 35px !important;
+        margin-left: 20px !important;
     }
     .ReviewTitle {
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
     .ReviewmainSharelink_share {
         input {
@@ -164,6 +174,6 @@
         }
     }
     .ReviewRefferal {
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
 }

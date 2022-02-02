@@ -9,7 +9,7 @@ export default function index({ key, date, title, email, rightText, num }) {
                     <p>{title}</p>
                     <div>{email}</div>
                 </div>
-                <img src="img/arrowrightthree.png" style={{ margin: '0 53px' }} />
+                <img src="img/arrowrightthree.png" width={100} style={{ margin: '0 30px' }} />
                 <div className="RewardsCard_Row_right">
                     {rightText}
                 </div>

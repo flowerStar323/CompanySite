@@ -132,8 +132,13 @@ input:active {
         margin-bottom: 10px;
     }
 }
-.SSSignBtn {
+.SSSignBtnOut {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.SSSignBtn {
+    width: 200px;
     height: 60px;
     display: flex;
     justify-content: center;

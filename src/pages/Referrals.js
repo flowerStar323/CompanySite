@@ -9,7 +9,9 @@ const Referrals = () => {
             <Header />
             <div className="ReviewTitle">Your Referrals</div>
             <div className="Reviewmaindiv">
-                <div className="ReviewmainTitle">Refer a Contact</div>
+                <div className="ReviewmainTitleOut">
+                    <div className="ReviewmainTitle">Refer a Contact</div>
+                </div>
                 <div className="Reviewmainsubtitle">
                     <p>When you refer someone to Moonhub:</p>
                     <ul>
@@ -55,7 +57,9 @@ const Referrals = () => {
                         <div className="ReviewmainCopyBtn">Copy</div>
                     </div>
                 </div>
-                <div className="ReviewRefferal">Referral Activity</div>
+                <div className="ReviewRefferalOut">
+                    <div className="ReviewRefferal">Referral Activity</div>
+                </div>
                 {
                     [...new Array(4)].map((e, k) => <RewardsCard
                         key='k'

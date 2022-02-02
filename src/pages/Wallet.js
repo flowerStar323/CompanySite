@@ -20,7 +20,7 @@ const Wallet = () => {
                 </div>
             </div>
             <div className="Reviewmaindiv">
-                <div className="ReviewRefferal">Successful referrals </div>
+                <div className="ReviewRefferal">Crescent Activity </div>
                 {
                     [...new Array(4)].map((e, k) => <RewardsCard
                         key='k'
@@ -39,6 +39,9 @@ const Wallet = () => {
             </div>
             <div className="Reviewmaindiv">
                 <div className="ReviewRefferal">Cash Activity</div>
+                <div className="payoutout">
+                    <div className="payoutText">$Payouts for Community Hires</div>
+                </div>
                 {
                     [...new Array(4)].map((e, k) => <CashActivityCard
                         key='k'

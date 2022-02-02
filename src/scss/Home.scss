@@ -67,7 +67,7 @@
     }
 }
 .hometitle {
-    font-family: Sans;
+    // font-family: Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -99,20 +99,22 @@
 }
 .joinText {
     font-family: Roboto;
-    font-style: normal;
+    font-style: italic;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 150%;
     text-align: center;
     margin-top: 100px;
     color: #ffffff;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    span {
+        font-weight: bolder;
+    }
 }
 .joinBtn {
     width: 200px;
-    height: 70px;
-    border-radius: 10px;
+    height: 60px;
     background: #00a8dd;
     display: flex;
     justify-content: center;

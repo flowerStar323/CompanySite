@@ -26,8 +26,7 @@
 }
 .RRRewardsCard_Row_right_in {
     width: 100%;
-    // margin-top: -30px;
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     align-items: center;
     p {
@@ -35,12 +34,12 @@
         margin: 0 30px;
         color: #00a8dd;
         font-weight: bolder;
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 .RRRewardsCard_Row_right {
-    width: 385px;
-    height: 141px;
+    width: 350px;
+    height: 120px;
     border: 1.5px solid #1aa9e8;
     border-radius: 10px;
     display: flex;
@@ -82,7 +81,7 @@
     }
 }
 .RRRewardsCard_Row_right {
-    padding: 30px 27px 0 41px;
+    padding: 20px 27px 0 41px;
     font-family: Sans;
     font-style: normal;
     font-weight: normal;

@@ -45,7 +45,7 @@ class ChoosePage extends React.Component {
                     <div className="ANextBtnOut">
                         <Link to='/partner'>
                             <div className="ANextBtn" onClick={() => this.Send_SignUp()}>
-                                Join
+                                Join!
                             </div>
                         </Link>
                     </div>

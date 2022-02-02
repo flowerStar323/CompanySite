@@ -50,7 +50,9 @@ const Referrals = () => {
                         I love working with high-growth AI companies to hire machine learning engineer talent. The majority of my referrals are through my personal network.
                     </div>
                 </div>
-                <div className="ProReviewRefferal">Community Referrals on Moonhub</div>
+                <div className="ProReviewRefferalOut">
+                    <div className="ProReviewRefferal">Community Referrals on Moonhub</div>
+                </div>
                 {
                     [...new Array(4)].map((e, k) => <RewardsCard
                         key='k'

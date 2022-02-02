@@ -76,7 +76,8 @@ class FirstPage extends React.Component {
                             Earn <img src="img/homelogo.png" width={30} /> for growing the community. <img src="img/homelogo.png" width={30} /> pay you $ every time anyone finds a job on Moonhub.
                         </div>
                         <div className="joinText">
-                            Earn 5&nbsp;&nbsp;<img src="img/homelogo.png" width={30} />&nbsp; when you join.
+                            <span>Earn</span> 5&nbsp;&nbsp;<img src="img/homelogo.png" width={30} />&nbsp; when you join.<br />
+                            + 50 &nbsp;<img src="img/homelogo.png" width={30} /> when you find a job
                         </div>
                         <div className="joinBtn" onClick={() => this.SignInFunc()}>
                             Join Moonhub
@@ -127,7 +128,7 @@ class FirstPage extends React.Component {
                     </div>
                     <Footer />
                 </div>
-                <Modal footer={false} width={1140} visible={this.state.joinvisible} onCancel={() => this.handleCancel()}>
+                <Modal footer={false} width={1140} visible={!this.state.joinvisible} onCancel={() => this.handleCancel()}>
                     <JoinNow func={this.SignInFunc} />
                 </Modal>
                 <Modal footer={false} width={1140} visible={this.state.selfvisible} onCancel={() => this.handleCancel()}>
