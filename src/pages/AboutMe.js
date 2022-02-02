@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import { Setaboutme } from "../actions/SignupAction";
+import { Setaboutme, Send_signdata } from "../actions/SignupAction";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../scss/AboutMe.scss";
 class ChoosePage extends React.Component {
@@ -12,8 +12,19 @@ class ChoosePage extends React.Component {
         }
     }
     Send_SignUp = () => {
-        const { email, password, referralcode, name, title, linkedinURL, photoURL } = this.props;
-
+        const { email, password, referralcode, name, title, linkedinURL, photoURL } = this.props.signdata;
+        const { aboutme } = this.state;
+        var data = {
+            email,
+            password,
+            referralcode,
+            name,
+            title,
+            linkedinURL,
+            photoURL,
+            aboutme
+        };
+        this.props.Send_signdata(data);
     }
     render() {
         return (
@@ -32,11 +43,9 @@ class ChoosePage extends React.Component {
                     </div>
                     <textarea className="textarea" onChange={(e) => this.setState({ aboutme: e.target.value })} />
                     <div className="ANextBtnOut">
-                        <Link to='/partner'>
-                            <div className="ANextBtn" onClick={() => this.Send_SignUp()}>
-                                Join
-                            </div>
-                        </Link>
+                        <div className="ANextBtn" onClick={() => this.Send_SignUp()}>
+                            Join
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,4 +57,4 @@ const mapStateToProps = state => {
         signdata: state.signupdata
     };
 };
-export default connect(mapStateToProps, { Setaboutme })(ChoosePage);
+export default connect(mapStateToProps, { Setaboutme, Send_signdata })(ChoosePage);

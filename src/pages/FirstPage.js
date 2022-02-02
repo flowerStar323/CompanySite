@@ -5,10 +5,22 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoMdLock } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { Send_logindata } from "../actions/SignupAction";
 import "../scss/FirstPage.scss";
 class FirstPage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
+    handleChange = e => {
+        this.setState({ [e.target.name]: e.target.value });
+    }
+    Login = () => {
+        const { email, password } = this.state;
+        this.props.Send_logindata(email, password);
     }
     render() {
         return (
@@ -33,17 +45,17 @@ class FirstPage extends React.Component {
                             <p>E-Mail or Username</p>
                             <div className="emailinput">
                                 <MdEmail className="emailIcon" />
-                                <input type="text" className="firstpageInput" placeholder="des..." />
+                                <input type="text" name="email" onChange={(e) => this.handleChange(e)} className="firstpageInput" placeholder="des..." />
                             </div>
                         </div>
                         <div className="emailPart">
                             <p>Password</p>
                             <div className="emailinput">
                                 <IoMdLock className="emailIcon" />
-                                <input type="password" className="firstpageInput" placeholder="e.g.:X AE A-12" />
+                                <input type="password" name="password" onChange={(e) => this.handleChange(e)} className="firstpageInput" placeholder="e.g.:X AE A-12" />
                             </div>
                         </div>
-                        <Link to="/"><div className="SignBtn">Login</div></Link>
+                        <div className="SignBtn" onClick={() => this.Login()}>Login</div>
                         <div className="login">Already a memeber?
                             <p onClick={() => this.props.func()} style={{ cursor: "pointer" }}>Sign up here<BiRightArrowAlt /></p>
                         </div>
@@ -56,4 +68,4 @@ class FirstPage extends React.Component {
 const mapStateToProps = state => {
     return {};
 };
-export default connect(mapStateToProps)(FirstPage);
+export default connect(mapStateToProps, { Send_logindata })(FirstPage);

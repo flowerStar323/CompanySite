@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Setemail_pass_code } from "../actions/SignupAction";
+import { Setemail_pass_code, RefferalCodeCheck } from "../actions/SignupAction";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoMdLock } from "react-icons/io";
@@ -18,6 +18,13 @@ class SignUp extends React.Component {
     }
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
+    }
+    Setemail_pass = async () => {
+        const { email, code, pass } = this.state;
+        var codevalidation = await this.props.RefferalCodeCheck(code);
+        console.log(codevalidation);
+        // this.props.Setemail_pass_code(email, pass, code);
+        // this.props.funcintro();
     }
     render() {
         const { email, code, pass } = this.state;
@@ -59,10 +66,7 @@ class SignUp extends React.Component {
                                 <input type="text" name="code" onChange={(e) => this.handleChange(e)} value={code} className="SSreferralcode" placeholder="des..." />
                             </div>
                         </div>
-                        <div className="SSSignBtn" onClick={() => {
-                            this.props.Setemail_pass_code(email, pass, code);
-                            this.props.funcintro();
-                        }}>Join Now</div>
+                        <div className="SSSignBtn" onClick={() => this.Setemail_pass()}>Join Now</div>
                         <div className="SSlogin">Already a memeber?
                             <p onClick={() => this.props.func()} style={{ cursor: "pointer" }}>Login here<BiRightArrowAlt /></p>
                         </div>
@@ -75,4 +79,4 @@ class SignUp extends React.Component {
 const mapStateToProps = state => {
     return {};
 };
-export default connect(mapStateToProps, { Setemail_pass_code })(SignUp);
+export default connect(mapStateToProps, { Setemail_pass_code, RefferalCodeCheck })(SignUp);
