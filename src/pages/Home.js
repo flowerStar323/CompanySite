@@ -128,7 +128,7 @@ class FirstPage extends React.Component {
                     </div>
                     <Footer />
                 </div>
-                <Modal footer={false} width={1140} visible={!this.state.joinvisible} onCancel={() => this.handleCancel()}>
+                <Modal footer={false} width={1140} visible={this.state.joinvisible} onCancel={() => this.handleCancel()}>
                     <JoinNow func={this.SignInFunc} />
                 </Modal>
                 <Modal footer={false} width={1140} visible={this.state.selfvisible} onCancel={() => this.handleCancel()}>
