@@ -43,9 +43,11 @@ class ChoosePage extends React.Component {
                     </div>
                     <textarea className="textarea" onChange={(e) => this.setState({ aboutme: e.target.value })} />
                     <div className="ANextBtnOut">
-                        <div className="ANextBtn" onClick={() => this.Send_SignUp()}>
-                            Join
-                        </div>
+                        <Link to='/partner'>
+                            <div className="ANextBtn" onClick={() => this.Send_SignUp()}>
+                                Join
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -21,10 +21,10 @@ class SignUp extends React.Component {
     }
     Setemail_pass = async () => {
         const { email, code, pass } = this.state;
-        var codevalidation = await this.props.RefferalCodeCheck(code);
-        console.log(codevalidation);
-        // this.props.Setemail_pass_code(email, pass, code);
-        // this.props.funcintro();
+        // var codevalidation = await this.props.RefferalCodeCheck(code);
+        // console.log(codevalidation);
+        this.props.Setemail_pass_code(email, pass, code);
+        this.props.funcintro();
     }
     render() {
         const { email, code, pass } = this.state;

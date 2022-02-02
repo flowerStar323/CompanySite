@@ -43,3 +43,7 @@ a {
 .ant-modal-wrap {
     background: #6B6B6BCC;
 }
+
+.ant-modal-body {
+    padding: 0 !important;
+}
