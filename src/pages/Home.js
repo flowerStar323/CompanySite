@@ -6,6 +6,7 @@ import JoinNow from "./FirstPage";
 import IntroSelf from "./IntroSelf";
 import AboutMe from "./AboutMe";
 import SignUp from "./SignUp";
+import { Slide } from 'react-slideshow-image';
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import MatchModal from "../components/MatchModal";
 import "../scss/Home.scss";
@@ -13,12 +14,14 @@ import { FaSignInAlt } from "react-icons/fa";
 class FirstPage extends React.Component {
     constructor() {
         super();
+        this.slideRef = React.createRef();
         this.state = {
             visible: false,
             joinvisible: false,
             selfvisible: false,
             aboutvisible: false,
             signvisible: false,
+            current: 0
         }
     }
     handleOk = () => {
@@ -32,6 +35,13 @@ class FirstPage extends React.Component {
             aboutvisible: false,
             signvisible: false,
         });
+    }
+    back = () => {
+        this.slideRef.current.goBack();
+    }
+
+    next = () => {
+        this.slideRef.current.goNext();
     }
     SignInFunc = () => {
         this.setState({ joinvisible: false, signvisible: true });
@@ -52,6 +62,21 @@ class FirstPage extends React.Component {
         this.setState({ signvisible: false, selfvisible: true });
     }
     render() {
+        const properties = {
+            duration: 5000,
+            autoplay: false,
+            transitionDuration: 500,
+            arrows: false,
+            infinite: true,
+            easing: "ease",
+            indicators: (i) => <div className="indicator">{i + 1}</div>
+        };
+        const slideImages = [
+            "img/ai.png",
+            "img/dandy.png",
+            "img/youcompany.png",
+            "img/para.png",
+        ];
         return (
             <div className="Hroot">
                 <div className="Hmaindiv">
@@ -90,14 +115,20 @@ class FirstPage extends React.Component {
                                     Discover moonshots with Moonhub.
                                 </div>
                                 <div className="bottomtitle_right">
-                                    <BiLeftArrow className="bottomtitle_right_slide_icon" />
-                                    <BiRightArrow className="bottomtitle_right_slide_icon" />
+                                    <BiLeftArrow className="bottomtitle_right_slide_icon" onClick={this.back} />
+                                    <BiRightArrow className="bottomtitle_right_slide_icon" onClick={this.next} />
                                 </div>
                             </div>
-                            <div className="verkada">
-                                <img src="img/homebottomlogo.png" width={170} />
-                                <p>VERKADA</p>
+                            <div className="slide-container">
+                                <Slide ref={this.slideRef} {...properties}>
+                                    {slideImages.map((each, index) => (
+                                        <div key={index} className="each-slide">
+                                            <img className="lazy" src={each} alt="sample" />
+                                        </div>
+                                    ))}
+                                </Slide>
                             </div>
+                            {/* </div> */}
                             <div className="roadmap">
                                 <p className="howitworks">How it Works</p>
                                 <div className="roadmapNum">

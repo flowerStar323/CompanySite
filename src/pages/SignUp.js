@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Setemail_pass_code, RefferalCodeCheck } from "../actions/SignupAction";
+import { Setemail_pass_code } from "../actions/SignupAction";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import axios from "axios";
+import { ServerURL } from '../config/port';
+import { notification } from "antd";
 import { IoMdLock } from "react-icons/io";
 import { connect } from 'react-redux';
 import { MdEmail } from "react-icons/md";
@@ -19,12 +22,18 @@ class SignUp extends React.Component {
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
     }
-    Setemail_pass = async () => {
+    Setemail_pass = () => {
         const { email, code, pass } = this.state;
-        // var codevalidation = await this.props.RefferalCodeCheck(code);
-        // console.log(codevalidation);
-        this.props.Setemail_pass_code(email, pass, code);
-        this.props.funcintro();
+        axios.post(`${ServerURL}/checkcode`, { code }).then(e => {
+            if (e) {
+                if (e.data == true) {
+                    this.props.Setemail_pass_code(email, pass, code);
+                    this.props.funcintro();
+                } else {
+                    notification.warning({ message: "Warning", description: "already exist code!!!" })
+                }
+            }
+        }).catch(err => notification.warning({ message: "Warning", description: err.response.data }))
     }
     render() {
         const { email, code, pass } = this.state;
@@ -79,6 +88,8 @@ class SignUp extends React.Component {
     }
 }
 const mapStateToProps = state => {
-    return {};
+    return {
+        codeflag: state.signupdata.checkcodeflag
+    };
 };
-export default connect(mapStateToProps, { Setemail_pass_code, RefferalCodeCheck })(SignUp);
+export default connect(mapStateToProps, { Setemail_pass_code })(SignUp);

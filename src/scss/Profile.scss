@@ -23,10 +23,10 @@
         line-height: 61px;
         position: relative;
         text-align: center;
-        height: 550px;
+        height: 400px;
+        padding-top: 150px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .ProreviewTitleMain {
         width: 1200px;
@@ -36,8 +36,9 @@
     }
 }
 .Prophotoposition {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
     border-radius: 50%;
     position: relative;
 }
@@ -104,11 +105,15 @@
     text-align: left;
     .Profilename {
         font-size: 35px;
+        display: flex;
+        justify-content: space-between;
     }
     .profilejob {
         font-size: 25px;
         margin-top: 30px;
         color: #000;
+        display: flex;
+        justify-content: space-between;
     }
     .profilelinkedin {
         font-size: 25px;
@@ -156,9 +161,27 @@
     justify-content: left;
     width: 1150px;
 }
+.moremain {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #868686;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-family: Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 38px;
+    margin: 30px 0 100px 0;
+    color: #00a8dd;
+}
 .ProReviewmainsubtitle {
     width: 1150px;
-    margin: 44px 0 10px 0;
+    margin: 50px 0 200px 0;
     .Proabouttitle {
         display: flex;
         width: 1150px;
@@ -169,7 +192,7 @@
         font-style: normal;
         font-weight: bolder;
         font-size: 35px;
-        line-height: 150%;
+        line-height: 100%;
         color: #00a8dd;
     }
     .ProaboutText {
@@ -177,9 +200,8 @@
         font-style: normal;
         font-size: 22px;
         line-height: 25px;
-        font-weight: bolder;
         width: 1170px;
-        color: #000000;
+        color: grey;
     }
 }
 .ProReviewmainSharelink {
@@ -236,7 +258,8 @@
     color: #fff;
     bottom: 5px;
     cursor: pointer;
-    left: 105px;
+    left: 82px;
+    font-size: 40px;
     position: absolute;
 }
 .ProReviewRefferal {
@@ -280,11 +303,12 @@
         height: 260px !important;
     }
     .ProReviewTitle {
-        height: 650px !important;
+        height: 550px !important;
     }
     .ProreviewTitleMain {
         flex-direction: column !important;
         align-items: center !important;
+        justify-content: unset !important;
     }
     .ProReviewTitle_left {
         margin-top: 20px !important;
@@ -292,9 +316,8 @@
     .ProresetBtnout {
         margin: 30px !important;
     }
-}
-@media screen and (max-width: 1160px) {
     .ProReviewmainsubtitle {
+        margin: 0 0 150px 0 !important;
         width: 98% !important;
     }
 }

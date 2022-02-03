@@ -1,7 +1,8 @@
-import { LOGINSUCCESS, LOGOUT } from '../actions/actionType';
+import { LOGINSUCCESS } from '../actions/actionType';
 
 const initState = {
-    isAuthenticate: false
+    isAuthenticate: false,
+    userdata: {}
 };
 
 export default (state = initState, { type, payload }) => {
@@ -9,12 +10,8 @@ export default (state = initState, { type, payload }) => {
         case LOGINSUCCESS:
             return {
                 ...state,
-                isAuthenticate: payload
-            }
-        case LOGOUT:
-            return {
-                ...state,
-                isAuthenticate: payload
+                isAuthenticate: true,
+                userdata: payload
             }
         default:
             return state;

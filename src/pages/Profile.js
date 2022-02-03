@@ -43,16 +43,16 @@ const Referrals = () => {
             <div className="ProReviewmaindiv">
                 <div className="ProReviewmainsubtitle">
                     <div className="Proabouttitle">
-                        <p>About Me</p>
+                        <p />
                         <p><BiEdit className="editbtn" /></p>
                     </div>
                     <div className="ProaboutText">
                         I love working with high-growth AI companies to hire machine learning engineer talent. The majority of my referrals are through my personal network.
                     </div>
                 </div>
-                <div className="ProReviewRefferalOut">
+                {/* <div className="ProReviewRefferalOut">
                     <div className="ProReviewRefferal">Community Referrals on Moonhub</div>
-                </div>
+                </div> */}
                 {
                     [...new Array(4)].map((e, k) => <RewardsCard
                         key='k'
@@ -63,6 +63,7 @@ const Referrals = () => {
                         num="+5"
                     />)
                 }
+                <div className="moremain">Load More</div>
             </div>
             <Modal
                 width={560}
