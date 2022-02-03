@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300display=swap");
 .ProReviewContainer {
     width: 100%;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .ProReviewTitleBack {
-        height: 160px;
+        height: 260px;
         position: absolute;
         top: 0;
         z-index: 2 !important;
@@ -26,7 +23,7 @@
         line-height: 61px;
         position: relative;
         text-align: center;
-        height: 350px;
+        height: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +53,7 @@
     margin-right: 5px;
 }
 .resetpassMain {
-    margin-right: 70px;
+    margin-right: 20px;
     padding: 24px;
     p {
         font-family: Sans;
@@ -263,9 +260,6 @@
     font-size: 25px;
 }
 @media screen and (max-width: 1480px) {
-    .ProReviewmainsubtitle {
-        width: 97% !important;
-    }
     .ProReviewmaindiv {
         width: 100% !important;
     }
@@ -279,13 +273,14 @@
         width: 98% !important;
     }
     .Proabouttitle {
-        width: 98% !important;
+        margin-left: 10px !important;
+        width: 97% !important;
     }
     .ProReviewTitleBack {
-        height: 140px !important;
+        height: 260px !important;
     }
     .ProReviewTitle {
-        height: auto !important;
+        height: 650px !important;
     }
     .ProreviewTitleMain {
         flex-direction: column !important;
@@ -296,6 +291,11 @@
     }
     .ProresetBtnout {
         margin: 30px !important;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .ProReviewmainsubtitle {
+        width: 98% !important;
     }
 }
 @media screen and (max-width: 1080px) {
@@ -324,7 +324,7 @@
         margin-left: 0 !important;
     }
     .ProReviewTitleBack {
-        height: 160px !important;
+        height: 250px !important;
     }
     .Profilename {
         color: #000 !important;
@@ -338,6 +338,7 @@
         font-size: 40px !important;
     }
     .ProReviewTitle {
+        height: 750px !important;
         font-size: 40px !important;
     }
     .ProReviewmainSharelink_share {

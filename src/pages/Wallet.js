@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import RewardsCard from "../components/RewardCard";
+import { Modal } from "antd";
+import { BsFillInfoCircleFill } from "react-icons/bs";
+import Withdraw from "./Withdraw";
 import CashActivityCard from "../components/CashActivityCard";
 import "../scss/Wallet.scss";
 const Wallet = () => {
+    const [visible, setVisible] = useState(false);
     return (
         <div className="ReviewContainer">
             <Header />
@@ -12,7 +16,7 @@ const Wallet = () => {
             <div className="walletGroup">
                 <div className="walletItem">
                     <img src="img/Crescent.png" />
-                    <div className="redeemBtn">Withdraw</div>
+                    <div className="redeemBtn" onClick={() => setVisible(true)}>Withdraw</div>
                 </div>
                 <div className="walletItem">
                     <img src="img/cash.png" />
@@ -40,7 +44,7 @@ const Wallet = () => {
             <div className="Reviewmaindiv">
                 <div className="ReviewRefferal">Cash Activity</div>
                 <div className="payoutout">
-                    <div className="payoutText">$Payouts for Community Hires</div>
+                    <div className="payoutText">$Payouts for Community Hires<BsFillInfoCircleFill className="inforIcon" /></div>
                 </div>
                 {
                     [...new Array(4)].map((e, k) => <CashActivityCard
@@ -59,6 +63,9 @@ const Wallet = () => {
                 </div>
             </div>
             <Footer />
+            <Modal visible={visible} width={1100} footer={false} onCancel={() => setVisible(false)}>
+                <Withdraw />
+            </Modal>
         </div>
     );
 };

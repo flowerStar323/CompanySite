@@ -99,24 +99,24 @@ class FirstPage extends React.Component {
                                 <p>VERKADA</p>
                             </div>
                             <div className="roadmap">
-                                <p>How it Works</p>
+                                <p className="howitworks">How it Works</p>
                                 <div className="roadmapNum">
                                     <div className="roadmapNumItem">
-                                        <img src="img/num1.png" width={170} height={150} />
+                                        <img src="img/num1.png" width={100} height={100} />
                                         <div className="roadmapText">
                                             <p>Discover startup opportunities.</p>
                                             <div className="roadmapsub">Meet the founders, hiring managers, and ambassadors behind some of the world’s fastest growing companies. </div>
                                         </div>
                                     </div>
                                     <div className="roadmapNumItem">
-                                        <img src="img/num2.png" width={170} height={150} />
+                                        <img src="img/num2.png" width={100} height={100} />
                                         <div className="roadmapText">
                                             <p>Discover startup opportunities.</p>
                                             <div className="roadmapsub">Meet the founders, hiring managers, and ambassadors behind some of the world’s fastest growing companies. </div>
                                         </div>
                                     </div>
                                     <div className="roadmapNumItem">
-                                        <img src="img/num3.png" width={170} height={150} />
+                                        <img src="img/num3.png" width={100} height={100} />
                                         <div className="roadmapText">
                                             <p>Discover startup opportunities.</p>
                                             <div className="roadmapsub">Meet the founders, hiring managers, and ambassadors behind some of the world’s fastest growing companies. </div>
