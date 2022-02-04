@@ -30,7 +30,7 @@ class SignUp extends React.Component {
                     this.props.Setemail_pass_code(email, pass, code);
                     this.props.funcintro();
                 } else {
-                    notification.warning({ message: "Warning", description: "already exist code!!!" })
+                    notification.error({ message: "Warning", description: "Invalid referral code.\n You need a referral code from an existing member to Join" })
                 }
             }
         }).catch(err => notification.warning({ message: "Warning", description: err.response.data }))
